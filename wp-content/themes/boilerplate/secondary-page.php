@@ -25,6 +25,25 @@ get_header(); ?>
         <?php if (get_field('include_three_column')){ ?>
           <div id="internal-lower-wrap">
     <div id="fp-testimonials" class="centered">
+    <div class="grid-env">
+      <?php
+        for($i = 0; $i < 12; $i++) {
+          echo '<div class="row">';
+          for($j = 0; $j < 12; $j++) {
+            echo '<div class="large-1 small-1 columns" style="text-align:center;color:#ccc;';
+            if((12*$i + $j + ($i % 2)) % 2) {
+              echo 'background-color:#efefef;';
+            }
+            echo '">';
+            echo $i;
+            echo ',';
+            echo $j;
+            echo '</div>';
+          }
+          echo '</div>';
+        }
+      ?>
+    </div>
     <div id="fp-testimonials-seemore">
       <?php
       $header = get_field('header_1');

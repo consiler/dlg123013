@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/topnavigation.css" />
 		<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/foundation/css/foundation.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/foundation/css/grid.css">
 <?php
 		//If you delete this line, the wordpress admin menu will not appear at the top of the page
 		wp_head();
