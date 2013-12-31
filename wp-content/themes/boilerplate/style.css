@@ -1556,6 +1556,9 @@ div.timer {
     overflow: hidden;
     padding-bottom: 60px;
 }
+#internal-lower-wrap {
+    overflow: hidden;
+}
 
 
 /* Secondary Page Internal Main Content Area */
