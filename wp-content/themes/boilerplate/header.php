@@ -15,7 +15,7 @@
         echo '<link rel="stylesheet" href="'.get_bloginfo('template_url').'/css/'.$x.'.css" />';
         }
       }
-      stylesheets(array("boilerplate", "fonts_and_wrapper", "topnavigation"));
+      stylesheets(array("boilerplate", "topnavigation"));
     ?>
     <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
     <?php
