@@ -1622,6 +1622,7 @@ div.timer {
 }
 #internal-main-nav > ul > li {
     padding-bottom: 15px;
+     list-style: none!important;
 }
 #internal-main-nav > ul > li > a.current-page {
     color: #156dc3;
