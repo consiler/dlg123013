@@ -7,7 +7,7 @@
         <?php while(has_sub_field('right_sidebar_promo_tiles')): ?>
 
         <div id="internal-sidebar-promo-tile">
-          <?php $promo_object = get_sub_field('promo_tile');?>
+          <?php $promo_object = get_sub_field('promo_tile'); ?>
           <a href="<?php the_field('link_url', $promo_object->ID); ?>"><img src="<?php the_field('image', $promo_object->ID); ?>"></a>
           </div>
        

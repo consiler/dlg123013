@@ -1423,29 +1423,20 @@ div.timer {
 }
 
 
-/* Case Study Template */
+/* Three Column Template */
 
-#fp-testimonials {
+#three-column {
     overflow: hidden;
+    margin-top: 35px;
 }
-#fp-testimonials-seemore {
-    float: left;
-    width: 265px;
-    margin: 35px;
-}
-#fp-testimonials-seemore p {
+.threecolumn-cell p {
     color: #33332f;
     font-family: 'hvnStd_Lite', Monaco;
 }
-#fp-testimonials-seemore span {
+.threecolumn-cell span {
     margin-top: 15px;
 }
-#fp-testimonials-logos {
-    float: right;
-    width: 524px;
-}
-
-#fp-testimonials h4{
+.threecolumn-cell h4 {
     color: #5197b4;
     font-family: hvnStd_LiteCn;
     font-size: 18pt;
@@ -1812,4 +1803,11 @@ blockquote {
 
 .orbit-progress {
     display: none!important;
+}
+
+.threecolumn-cell h4 {
+
+}
+.threecolumn-cell p {
+    
 }
