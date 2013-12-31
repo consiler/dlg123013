@@ -1,5 +1,5 @@
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/foundation/js/foundation/foundation.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/foundation/js/foundation/foundation.orbit.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/foundation.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/foundation.orbit.js"></script>
 <?php if(is_front_page()) { ?>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/slider.js"></script>
 <?php } ?>
