@@ -8,7 +8,7 @@
               <?php if($header = get_sub_field('header_'.$i)) { ?>
                 <h4><?php echo $header; ?></h4>
                 <?php if($copy = get_sub_field('copy_'.$i)) { ?>
-                <p><?php echo $copy; ?></p>
+                <?php echo $copy; ?>
                 <?php } ?>
                 <?php if(($cta = get_sub_field('cta_'.$i)) && ($cta_link = get_sub_field('cta_link_'.$i))) { ?>
                 <a href="<?php echo $cta_link; ?>"><span class="light-grey-button"><?php echo $cta; ?></span></a>

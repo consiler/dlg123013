@@ -45,44 +45,25 @@ get_header(); ?>
   </div>
 </div>
 <div id="fp-testimonials-wrap">
-  <div id="fp-testimonials" class="centered">
-    <div id="fp-testimonials-seemore">
-      <?php
-      $header = get_field('header_1');
-      $copy = get_field('copy_1');
-      $cta = get_field('cta_1');
-      $cta_link = get_field('cta_link_1');
-      ?>
-      <h4><?php echo $header ?></h4>
-      <p><?php echo $copy ?></p>
-      <a href="<?php echo $cta_link ?>"><span class="light-grey-button"><?php echo $cta ?></span></a>
-    </div>
-    <div id="fp-testimonials-seemore">
-      <?php
-      $header = get_field('header_2');
-      $copy = get_field('copy_2');
-      $cta = get_field('cta_2');
-      $cta_link = get_field('cta_link_2');
-      ?>
-      <h4><?php echo $header ?></h4>
-      <p><?php echo $copy ?></p>
-      <a href="<?php echo $cta_link ?>"><span class="light-grey-button"><?php echo $cta ?></span></a>
-    </div>
-    <div id="fp-testimonials-seemore">
-      <?php
-      $header = get_field('header_3');
-      $copy = get_field('copy_3');
-      $cta = get_field('cta_3');
-      $cta_link = get_field('cta_link_3');
-      ?>
-      <h4><?php echo $header ?></h4>
-      <p><?php echo $copy ?></p>
-      <a href="<?php echo $cta_link ?>"><span class="light-grey-button"><?php echo $cta ?></span></a>
-    </div>
-    <!-- <div id="fp-testimonials-logos">
-      <img src="<?php bloginfo('template_url'); ?>/images/testimonials-client-logos.jpg">
-      <button><?php //arrow button, may indicate that this is a slideshow of images with logos ?></button>
-    </div> -->
+  <?php if (get_field('include_three_column')) { ?>
+  <div id="fp-testimonials" class="grid-env centered">
+    <?php if(get_field('three_column_data')): ?>
+      <?php while(has_sub_field('three_column_data')): ?>
+        <?php for($i = 1; $i <= 3; $i++) { ?>
+          <div id="fp-testimonials-seemore">
+          <?php if($header = get_sub_field('header_'.$i)) { ?>
+            <h4><?php echo $header; ?></h4>
+            <?php if($copy = get_sub_field('copy_'.$i)) { ?>
+            <?php echo $copy; ?>
+            <?php } ?>
+            <?php if(($cta = get_sub_field('cta_'.$i)) && ($cta_link = get_sub_field('cta_link_'.$i))) { ?>
+            <a href="<?php echo $cta_link; ?>"><span class="light-grey-button"><?php echo $cta; ?></span></a>
+            <?php } } ?>
+          <?php } ?>
+          </div>
+      <?php endwhile; ?>
+    <?php endif; ?>
   </div>
+  <?php } ?>
 </div>
 <?php get_footer(); ?>

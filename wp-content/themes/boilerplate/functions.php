@@ -628,21 +628,6 @@ endif;
 	add_filter( 'comment_form_field_comment', 'boilerplate_comment_field_placeholder' );
 
 /*	End Boilerplate */
-
-add_action( 'init', 'create_frontpage_slides' );
-function create_frontpage_slides() {
-	register_post_type( 'frontpage_slides',
-		array(
-			'labels' => array(
-				'name' => __( 'Front Page Slides' ),
-				'singular_name' => __( 'Front Page Slide' )
-			),
-		'public' => false,
-		'has_archive' => false,
-		'show_ui' => true
-		)
-	);
-}
 add_action( 'init', 'create_promo_tiles' );
 function create_promo_tiles() {
 	register_post_type( 'promo_tiles',
