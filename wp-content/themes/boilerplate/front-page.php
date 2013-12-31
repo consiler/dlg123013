@@ -6,41 +6,22 @@ get_header(); ?>
 <div id="fp-slideshow-wrap">
   <div class="centered">
   <div class="example-orbit" data-orbit>
-    <?php
-      $post_type = 'frontpage_slides';
-      $args = array(
-        'post_type' => $post_type,
-        'posts_per_page' => -1,
-        'orderby' => 'title',
-        'order' => 'ASC',
-        'ignore_sticky_posts'=> 1
-      );
- 
-      $my_query = null;
-      $my_query = new WP_Query($args);
-      $testgroup = "A";
-      if(isset($_GET['bgroup'])){ $testgroup = "B"; }
-      if( $my_query->have_posts() ) {
-        while ($my_query->have_posts()) : $my_query->the_post();
-        $id = get_the_ID();
-        if(get_field('test_group', $id) == $testgroup) {
-        ?>
-          <li>
-            <img src="<?php the_field('slide_image', $id); ?>" />
-            <div class="carousel-headline-wrap">
-              <h2 class="carousel-headline"><?php the_field('slide_title', $id); ?></h2>
-              <p class="carousel-subheading"><?php the_field('slide_description', $id); ?></p>
-              <?php if($label = get_field('slide_cta_label', $id)){ ?>
-                <a href="<?php the_field('slide_cta_link'); ?>"><span class="lighter-grey-button"><?php echo $label; ?></span></a>
-              <?php } ?>
-            </div>
-          </li>
-          <?php
-        }
-        endwhile;
-      }
-      wp_reset_query();
-    ?>
+    <!-- Start of Front Page Slides Repeater -->
+    <?php if(get_field('front_page_slides')): ?>
+      <?php while(has_sub_field('front_page_slides')): ?>
+        <li>
+          <img src="<?php the_sub_field('slide_image'); ?>" />
+          <div class="carousel-headline-wrap">
+            <h2 class="carousel-headline"><?php the_sub_field('slide_title'); ?></h2>
+            <p class="carousel-subheading"><?php the_sub_field('slide_description'); ?></p>
+            <?php if(get_sub_field('include_cta')){ ?>
+              <a href="<?php the_sub_field('slide_cta_link'); ?>"><span class="lighter-grey-button"><?php  the_sub_field('slide_cta_label'); ?></span></a>
+            <?php } ?>
+          </div>
+        </li>
+      <?php endwhile; ?>
+    <?php endif; ?>
+    <!-- End of Front Page Slides Repeater -->
   </div>
   </div>
 </div>
