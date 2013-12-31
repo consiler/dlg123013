@@ -27,7 +27,7 @@ get_header(); ?>
 </div>
 <div id="fp-testimonials-wrap">
   <?php if (get_field('include_three_column')) { ?>
-  <div id="fp-testimonials" class="grid-env centered">
+  <div id="fp-testimonials" class="centered">
     <?php if(get_field('three_column_data')): ?>
       <?php while(has_sub_field('three_column_data')): ?>
         <?php for($i = 1; $i <= 3; $i++) { ?>
@@ -40,8 +40,8 @@ get_header(); ?>
             <?php if(($cta = get_sub_field('cta_'.$i)) && ($cta_link = get_sub_field('cta_link_'.$i))) { ?>
             <a href="<?php echo $cta_link; ?>"><span class="light-grey-button"><?php echo $cta; ?></span></a>
             <?php } } ?>
+            </div>
           <?php } ?>
-          </div>
       <?php endwhile; ?>
     <?php endif; ?>
   </div>

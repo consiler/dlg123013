@@ -5,6 +5,8 @@
 <!--[if IE 9 ]><html class="no-js ie ie9 lte9" dir="<?php bloginfo('text_direction'); ?>" <?php language_attributes(); ?>><![endif]-->
 <!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" dir="<?php bloginfo('text_direction'); ?>" <?php language_attributes(); ?>><!--<![endif]-->
 	<head>
+    <script type="text/javascript" src="//use.typekit.net/jbf6iic.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		<meta charset="<?php bloginfo('charset'); ?>" />
 		<title>Dialog Group</title>
     <?php
