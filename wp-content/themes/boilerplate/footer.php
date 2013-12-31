@@ -18,7 +18,6 @@
         </div>
       </div>
     </div>
-    <?php include 'template-footer-scripts.php'; ?>
     <?php
       /* Always have wp_footer() just before the closing </body>
        * tag of your theme, or you will break many plugins, which
@@ -26,5 +25,6 @@
        */
       wp_footer();
     ?>
+    <?php require 'template-footer-scripts.php'; ?>
 	</body>
 </html>

@@ -10,16 +10,14 @@
     <?php
       function stylesheets($lst) {
         foreach($lst as $x) {
-        ?>
-        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/<?php echo $x; ?>.css" />
-        <?php
+        echo '<link rel="stylesheet" href="'.get_bloginfo('template_url').'/css/'.$x.'.css" />';
         }
       }
-      stylesheets("boilerplate", "fonts_and_wrapper", "topnavigation");
+      stylesheets(array("boilerplate", "fonts_and_wrapper", "topnavigation"));
     ?>
     <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
     <?php
-      stylesheets("foundation", "grid");
+      stylesheets(array("foundation", "grid"));
 		  //If you delete this line, the wordpress admin menu will not appear at the top of the page
 		  wp_head();
     ?>
