@@ -1427,7 +1427,15 @@ div.timer {
 
 #three-column {
     overflow: hidden;
+}
+#three-column .row {
     margin-top: 35px;
+}
+.threecolumn-cell {
+    padding-left: 70px!important;
+}
+.threecolumn-cell:first-child {
+    padding-left: 0!important;
 }
 .threecolumn-cell p {
     color: #33332f;
@@ -1569,31 +1577,31 @@ div.timer {
     padding-left: 35px;
     color: #787878;
 }
-#internal-main-content b {
+#internal-lower b {
     font-weight: bold;
 }
-#internal-main-content ul {
+#internal-lower ul {
     list-style: disc outside none;
     color: #787878;
 }
-#internal-main-content ul li {
+#internal-lower ul li {
     margin: 15px 0;
     margin-left: 20px;
 }
-#internal-main-content h2 {
+#internal-lower h2 {
     color: #5197b4;
     font-family: hvnStd_LiteCn;
     font-size: 20pt;
     padding-top: 10px;
     letter-spacing: .04em;
 }
-#internal-main-content p {
+#internal-lower p {
     padding: 10px 0;
 }
-#internal-main-content em {
+#internal-lower em {
     font-style: italic;
 }
-#internal-main-content h5 {
+#internal-lower h5 {
     font-size: 13px;
 }
 #internal-main-nav {

@@ -5,13 +5,14 @@
           <div class="row">
             <?php for($i = 1; $i <= 3; $i++) { ?>
               <div class="large-4 columns threecolumn-cell">
-              <h4><?php echo get_sub_field('header_'.$i); ?></h4>
-              <?php if($copy = get_sub_field('copy_'.$i)) { ?>
-              <p><?php echo $copy; ?></p>
-              <?php } ?>
-              <?php if(($cta = get_sub_field('cta_'.$i)) && ($cta_link = get_sub_field('cta_link_'.$i))) { ?>
-              <a href="<?php echo $cta_link; ?>"><span class="light-grey-button"><?php echo $cta; ?></span></a>
-              <?php } ?>
+              <?php if($header = get_sub_field('header_'.$i)) { ?>
+                <h4><?php echo $header; ?></h4>
+                <?php if($copy = get_sub_field('copy_'.$i)) { ?>
+                <p><?php echo $copy; ?></p>
+                <?php } ?>
+                <?php if(($cta = get_sub_field('cta_'.$i)) && ($cta_link = get_sub_field('cta_link_'.$i))) { ?>
+                <a href="<?php echo $cta_link; ?>"><span class="light-grey-button"><?php echo $cta; ?></span></a>
+                <?php } } ?>
             </div>
             <?php } ?>
           </div>
