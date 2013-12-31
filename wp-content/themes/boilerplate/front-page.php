@@ -1,12 +1,7 @@
 <?php
-/**
+/*
  * Template Name: Front Page
- *
- * @package WordPress
- * @subpackage Boilerplate
- * @since Boilerplate 1.0
  */
-
 get_header(); ?>
 <div id="fp-slideshow-wrap">
   <div class="centered">
