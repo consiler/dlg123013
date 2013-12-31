@@ -6,6 +6,9 @@ get_header(); ?>
 <style type="text/css">
 #qwer h1 {
   font-family: "pragmatica-web";
+  font-family: "pragmatica-web",sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 #qwer h2 {
   font-family: "pragmatica-web";
@@ -16,6 +19,7 @@ get_header(); ?>
 #qwer h4 {
   font-family: "pragmatica-web";
 }
+
 #qwer p {
   font-family: "pragmatica-web";
 }
