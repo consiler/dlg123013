@@ -1,15 +1,6 @@
 <?php
-/**
+/*
  * Template Name: Story Page
- *
- * A custom page template with an optional sidebar.
- *
- * The "Template Name:" bit above allows this to be selectable
- * from a dropdown menu on the edit page screen.
- *
- * @package WordPress
- * @subpackage Boilerplate
- * @since Boilerplate 1.0
  */
 
 get_header(); ?>
@@ -22,9 +13,6 @@ get_header(); ?>
       </header>
     </div>
   </div>
-
-
-
 
 <!-- Start of blocks -->
 
