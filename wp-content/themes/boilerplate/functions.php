@@ -656,5 +656,25 @@ function create_job_listings() {
 		)
 	);
 }
-
+function cta_func( $atts, $content = null) {
+	extract( shortcode_atts( array(
+		'label' => 'Learn More',
+		'href' => '#',
+		'pageid' => '-1'
+	), $atts ) );
+	$retstring = '<a href="';
+	if($pageid == -1)
+	{
+		$retstring .= $href;
+	} else {
+		if($pg = get_page_uri($pageid)) {
+			$retstring .= '/'.$pg;
+		} else {
+			return "CTA has invalid page ID.";
+		}
+	}
+	$retstring .= '"><span class="light-grey-button">'.$label.'</span></a>';
+	return $retstring;
+}
+add_shortcode( 'cta', 'cta_func' );
 ?>

@@ -1121,7 +1121,6 @@ p {
     color: #787878;
 }
 
-
 /* use this for navmenu, submenu, slideshow, etc. */
 .centered {
     width: 1024px;
@@ -1574,7 +1573,7 @@ div.timer {
 #internal-main-content {
     float: left;
     width: 552px;
-    padding-top: 30px;
+    padding-top: 43px;
     padding-right: 20px;
     padding-left: 35px;
     color: #787878;
@@ -1588,7 +1587,6 @@ div.timer {
 }
 #internal-lower ul li {
     margin: 15px 0;
-    margin-left: 20px;
 }
 #internal-lower h2 {
     color: #5197b4;
