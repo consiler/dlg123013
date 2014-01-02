@@ -1426,6 +1426,7 @@ div.timer {
 
 #three-column {
     overflow: hidden;
+    padding-left: 23px; 
 }
 #three-column .row {
     margin-top: 35px;
@@ -1597,6 +1598,7 @@ div.timer {
 }
 #internal-lower p {
     padding: 10px 0;
+
 }
 #internal-lower em {
     font-style: italic;
@@ -1607,7 +1609,7 @@ div.timer {
 #internal-main-nav {
     float: left;
     width: 140px;
-    padding-left: 20px;
+    padding-left: 5px;
     padding-top: 40px;
     padding-right: 10px;
     padding-bottom: 40px;
@@ -1819,4 +1821,12 @@ blockquote {
 }
 .threecolumn-cell p {
     
+}
+
+
+
+/*Adding general internal lower font and copy styles*/
+
+#internal-lower p {
+    font-size: 11pt;
 }
