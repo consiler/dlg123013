@@ -1,3 +1,6 @@
+<?php
+define('MINIFY', 1);
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="no-js ie ie6 lte7 lte8 lte9" dir="<?php bloginfo('text_direction'); ?>" <?php language_attributes(); ?>><![endif]-->
 <!--[if IE 7 ]><html class="no-js ie ie7 lte7 lte8 lte9" dir="<?php bloginfo('text_direction'); ?>" <?php language_attributes(); ?>><![endif]-->
@@ -15,16 +18,16 @@
         echo '<link rel="stylesheet" href="'.get_bloginfo('template_url').'/css/'.$x.'.css" />';
         }
       }
-      stylesheets(array("boilerplate", "topnavigation"));
+      $stylesheet_url = MINIFY ? "style.min.css" : "style.css";
     ?>
-    <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+    <link rel="stylesheet" href="<?php echo get_bloginfo('template_url').'/'.$stylesheet_url; ?>" />
     <?php
-      stylesheets(array("foundation", "grid"));
+      stylesheets(array("foundation.min", "grid.min"));
 		  //If you delete this line, the wordpress admin menu will not appear at the top of the page
 		  wp_head();
     ?>
-    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/navbar.js"></script>
-    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/retina.js/js/retina-1.1.0.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/navbar.min.js"></script>
+    <!--<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/retina.js/js/retina-1.1.0.min.js"></script>-->
   </head>
 	<body <?php body_class(); ?>>
     <div id="wrapper">
