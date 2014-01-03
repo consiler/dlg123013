@@ -1,118 +1,12 @@
 /*
 Theme Name: Dialog Group
 Author: Maxwell Ponte and Sanford Morton
-Version: 2.5
+Version: 2.6
 */
 
-@import 'normalize', 'fonts';
-
 $font-stack: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-
 $footer-height: 165px;
 
-html, body {
-   font-family: $font-stack;
-   font-weight: 300;
-   height: 100%;
-   min-height: 100%;
-}
-#wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0px auto (-1 * $footer-height);
-}
-.push {
-  height: $footer-height;
-}
-a {
-    text-decoration: none;
-}
-b, strong {
-  font-weight: bold;
-}
-p {
-    line-height: 1.3em;
-    color: #787878;
-}
-
-/* use this for navmenu, submenu, slideshow, etc. */
-.centered {
-    width: 1024px;
-    margin: 0 auto;
-}
-
-.grey-button {
-    color: #464e52;
-    display: inline-block;
-    font-size: 10pt;
-    letter-spacing: 0.07em;
-    line-height: 38px;
-    margin-top: 20px;
-    padding: 0 20px;
-    text-transform: uppercase;
-}
-span.light-grey-button {
-    @extend .grey-button;
-    background-color: #c4bfbf;
-    background-color: rgba(196, 191, 191, 0.3);
-}
-span.lighter-grey-button {
-    @extend .grey-button;
-    background-color: #ebeaea;
-    background-color: rgba(235, 234, 234, 0.7);
-}
-
-@import 'logo', 'social', 'topnav', 'slideshow', 'fp-testimonials', 'three-column',
-        'internal-header', 'internal-content', 'footer';
-
-blockquote {
-    font-style: italic; 
-    border-left: 4px solid #ccc;
-    margin: 30px 0 0px 15px;
-    padding-left: 15px;
-    background: #f9f9f9;
-}
-
-#story-block header {text-align: left!important; margin-left: 32%;}
-#story-block header h1 { font-size: 24px; font-weight: 800; padding-bottom: 7px; }
-#story-block header h2 { font-size: 16px; font-weight: 300; color: #959494;}
-#story-block .container {width: 960px; margin: 0 auto;}
-#story-block {background-color: #fff;}
-#story-block.dg-even { background-color: #fafafa!important; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6;  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.03); -moz-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.03); box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.03); }
-#story-block.dg-bg {padding-top:0px; padding-bottom:0px; background-attachment: fixed; background-position: top center; background-repeat: no-repeat; -moz-background-size: cover; -webkit-background-size: cover; background-size: cover;}
-#story-block.dg-bg header {padding-top:10%; text-align: center;}
-#story-block.dg-bg header h1 {color: #fff; font-size: 70px;}
-#story-block.dg-bg header h2 {color: #F1F1F1; font-size: 36px;}
-#story-block.dg-bg .sectionhead {width:960px; height: 300px;}
-
-#story-block.bg1 {background-image: url(/wp-content/themes/boilerplate/images/story/bg1.jpg);}
-#story-block.bg2 {background-image: url(/wp-content/themes/boilerplate/images/story/bg2.jpg);}
-#story-block.bg3 {background-image: url(/wp-content/themes/boilerplate/images/story/bg3.jpg);}
-
-#story-block #vision:after {content: url(/wp-content/themes/boilerplate/images/story/slide1.jpg);}
-#story-block #approach:after {content: url(/wp-content/themes/boilerplate/images/story/slide2.jpg);}
-#story-block #do:after {content: url(/wp-content/themes/boilerplate/images/story/slide3.jpg);}
-
-#numslidesdiv {
-    display: none;
-}
-
-.orbit-progress {
-    display: none!important;
-}
-
-.threecolumn-cell h4 {
-
-}
-.threecolumn-cell p {
-    
-}
-
-
-
-/*Adding general internal lower font and copy styles*/
-
-#internal-lower p {
-    font-size: 11pt;
-}
+@import 'normalize', 'fonts', 'basic', 'cta', 'logo', 'social', 'topnav',
+        'slideshow', 'fp-testimonials', 'three-column', 'internal-header',
+        'internal-content', 'footer', 'our-story';
