@@ -34,14 +34,6 @@ video {
   *zoom: 1; }
 
 /**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/**
  * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
  * Known issue: no IE 6 support.
  */
@@ -659,71 +651,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 'alert' has a basic style, since it's useful to have it standing out for testing purposes.
 
-
-
-/* Font stack options
-
-  The following represents a list of font stacks, as recommended by Nathan Ford in
-  http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/
-
-  I've added inverted commas around the relevant family names to ensure compatibility.
-  p = balanced for paragraphs or body copy
-  t = balanced for headlines or titles
-
-  - - - -
-
-Arial, "Helvetica Neue", Helvetica, sans-serif - p, t
-
-Baskerville, "Times New Roman", Times, serif - p
-Baskerville, "Times, Times New Roman", serif - t
-
-Cambria, Georgia, Times, "Times New Roman", serif - p, t
-"Century Gothic", "Apple Gothic", sans-serif - p, t
-
-Consolas, "Lucida Console", Monaco, monospace - p, t
-
-"Copperplate Light", "Copperplate Gothic Light", serif - p, t
-
-"Courier New", Courier, monospace - p, t
-
-"Franklin Gothic Medium", "Arial Narrow Bold", Arial, sans-serif - p, t
-
-Futura, "Century Gothic", "Apple Gothic", sans-serif - p, t
-
-Garamond, "Hoefler Text", "Times New Roman", Times, serif - p
-Garamond, "Hoefler Text", Palatino, "Palatino Linotype", serif - t
-
-Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif - p
-Geneva, Verdana, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif - t
-
-Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif - p
-Georgia, Times, "Times New Roman", serif - t
-
-GillSans, Calibri, Trebuchet, sans-serif - p
-GillSans, Trebuchet, Calibri, sans-serif - t
-
-"Helvetica Neue", Arial, Helvetica, sans-serif - p
-Helvetica, "Helvetica Neue", Arial, sans-serif - t
-
-Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif - p, t
-
-"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif - p, t
-
-Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif - p
-Palatino, "Palatino Linotype", "Hoefler Text", Times, "Times New Roman", serif - t
-
-Tahoma, Geneva, Verdana - p
-Tahoma, Verdana, Geneva - t
-
-Times, "Times New Roman", Georgia, serif - p, t
-
-Trebuchet, "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif - p
-Trebuchet, Tahoma, Arial, sans-serif - t
-
-Verdana, Geneva, Tahoma, sans-serif - p
-Verdana, Tahoma, Geneva, sans-serif - t
-
-*/
 /** END Starkers CSS **/
 /** START WordPress-Defined CSS Classes **/
 /** Keep drop-downs working **/
@@ -804,31 +731,13 @@ button {
   /* IE6,IE7 */ }
 
 @font-face {
-  font-family: 'hvnStd_UltLt';
-  src: url("fonts/helveticaneueltstd-ultlt-webfont.eot"), url("fonts/helveticaneueltstd-ultlt-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/helveticaneueltstd-ultlt-webfont.woff") format("woff"), url("fonts/helveticaneueltstd-ultlt-webfont.ttf") format("truetype"), url("fonts/helveticaneueltstd-ultlt-webfont.svg#helvetica_neue_lt_st25ultraLt") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'hvnStd_Thin';
-  src: url("fonts/helveticaneueltstd-thcn-webfont.eot"), url("fonts/helveticaneueltstd-thcn-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/helveticaneueltstd-thcn-webfont.woff") format("woff"), url("fonts/helveticaneueltstd-thcn-webfont.ttf") format("truetype"), url("fonts/helveticaneueltstd-thcn-webfont.svg#helvetica_neue_lt_std37ThCn") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
-@font-face {
   font-family: 'hvnStd_LiteCn';
   src: url("fonts/helveticaneueltstd-ltcn-webfont.eot"), url("fonts/helveticaneueltstd-ltcn-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/helveticaneueltstd-ltcn-webfont.woff") format("woff"), url("fonts/helveticaneueltstd-ltcn-webfont.ttf") format("truetype"), url("fonts/helveticaneueltstd-ltcn-webfont.svg#helvetica_neue_lt_std47LtCn") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-@font-face {
-  font-family: 'hvnStd_Lite';
-  src: url("fonts/helveticaneueltcom-lt-webfont.eot"), url("fonts/helveticaneueltcom-lt-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/helveticaneueltcom-lt-webfont.woff") format("woff"), url("fonts/helveticaneueltcom-lt-webfont.ttf") format("truetype"), url("fonts/helveticaneueltcom-lt-webfont.svg#helvetica_neue_lt_com45_light") format("svg");
-  font-weight: normal;
-  font-style: normal; }
-
 html, body {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   height: 100%;
   min-height: 100%; }
@@ -1046,13 +955,14 @@ down every time */
     margin-top: 30px; }
 
 .carousel-headline {
-  font-family: hvnStd_UltLt;
+  font-family: "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   letter-spacing: 0.06em;
   color: #3d3d3d;
-  font-size: 38px; }
+  font-size: 38px;
+  font-weight: 200; }
 
 .carousel-subheading {
-  font-family: hvnStd_Thin;
+  font-family: "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   letter-spacing: 0.04em;
   color: #464e52;
   font-size: 18px; }
@@ -1074,7 +984,7 @@ down every time */
 
 #fp-testimonials-seemore p {
   color: #33332f;
-  font-family: 'hvnStd_Lite', Monaco; }
+  font-family: "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 #fp-testimonials-seemore span {
   margin-top: 15px; }
@@ -1085,7 +995,7 @@ down every time */
 
 #fp-testimonials h4 {
   color: #5197b4;
-  font-family: hvnStd_LiteCn;
+  font-family: hvnStd_LiteCn, "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18pt;
   letter-spacing: .04em;
   padding-bottom: 4px; }
@@ -1105,14 +1015,14 @@ down every time */
 
 .threecolumn-cell p {
   color: #33332f;
-  font-family: 'hvnStd_Lite', Monaco; }
+  font-family: "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; }
 
 .threecolumn-cell span {
   margin-top: 15px; }
 
 .threecolumn-cell h4 {
   color: #5197b4;
-  font-family: hvnStd_LiteCn;
+  font-family: hvnStd_LiteCn, "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18pt;
   letter-spacing: .04em;
   padding-bottom: 4px; }
@@ -1149,11 +1059,11 @@ down every time */
   padding-top: 40px;
   margin-left: 50px; }
   #large-internal-header-text > h1 {
-    font-family: "pragmatica-web", hvnStd_UltLt;
+    font-family: "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-weight: 200;
     font-size: 37pt; }
   #large-internal-header-text > p {
-    font-family: "pragmatica-web", hvnStd_Thin;
+    font-family: "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 16px;
     font-weight: 200;
     letter-spacing: .04em; }
@@ -1170,12 +1080,12 @@ down every time */
   padding-left: 180px;
   padding-top: 40px; }
   #internal-header-text > h1 {
-    font-family: "pragmatica-web", hvnStd_UltLt;
+    font-family: "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #b4c1cf;
     font-weight: 200;
     font-size: 37pt; }
   #internal-header-text > p {
-    font-family: "pragmatica-web", hvnStd_Thin;
+    font-family: "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 16px;
     color: #fff;
     font-weight: 200;
@@ -1217,7 +1127,7 @@ down every time */
       margin: 15px 0; }
   #internal-lower h2 {
     color: #5197b4;
-    font-family: hvnStd_LiteCn;
+    font-family: hvnStd_LiteCn, "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 20pt;
     padding-top: 10px;
     letter-spacing: .04em; }
@@ -1294,7 +1204,7 @@ down every time */
       font-size: 12px;
       font-weight: bold;
       color: #fff;
-      font-family: Arial; }
+      font-family: Arial, sans-serif; }
   #menu-top-navigation-1 .sub-menu > li > a {
     font-size: 11px;
     color: #ccc; }

@@ -26,12 +26,12 @@
     padding-top: 40px;
     margin-left: 50px;
     & > h1 {
-        font-family: "pragmatica-web", hvnStd_UltLt;
+        font-family: $font-stack;
         font-weight: 200;
         font-size: 37pt;
     }
     & > p {
-        font-family: "pragmatica-web", hvnStd_Thin;
+        font-family: $font-stack;
         font-size: 16px;
         font-weight: 200;
         letter-spacing: .04em;
@@ -56,13 +56,13 @@
     padding-left: 180px;
     padding-top: 40px;
     & > h1 {
-        font-family: "pragmatica-web", hvnStd_UltLt;
+        font-family: $font-stack;
         color: #b4c1cf;
         font-weight: 200;
         font-size: 37pt;
     }
     & > p {
-        font-family: "pragmatica-web", hvnStd_Thin;
+        font-family: $font-stack;
         font-size: 16px;
         color: #fff;
         font-weight: 200;

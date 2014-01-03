@@ -12,13 +12,14 @@
     }
 }
 .carousel-headline {
-    font-family: hvnStd_UltLt;
+    font-family: $font-stack;
     letter-spacing: 0.06em;
     color: #3d3d3d;
     font-size: 38px;
+    font-weight: 200;
 }
 .carousel-subheading {
-    font-family: hvnStd_Thin;
+    font-family: $font-stack;
     letter-spacing: 0.04em;
     color: #464e52;
     font-size: 18px;

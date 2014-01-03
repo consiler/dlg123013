@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'hvnStd_LiteCn';
+    src: url('fonts/helveticaneueltstd-ltcn-webfont.eot'),
+         url('fonts/helveticaneueltstd-ltcn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneueltstd-ltcn-webfont.woff') format('woff'),
+         url('fonts/helveticaneueltstd-ltcn-webfont.ttf') format('truetype'),
+         url('fonts/helveticaneueltstd-ltcn-webfont.svg#helvetica_neue_lt_std47LtCn') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 html, body {
    font-family: $font-stack;
    font-weight: 300;
