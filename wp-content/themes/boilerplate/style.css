@@ -1124,7 +1124,8 @@ down every time */
     list-style: disc outside none;
     color: #787878; }
     #internal-lower ul li {
-      margin: 15px 0; }
+      margin: 15px 0;
+      font-size: 10pt; }
   #internal-lower h2 {
     color: #5197b4;
     font-family: hvnStd_LiteCn, "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
