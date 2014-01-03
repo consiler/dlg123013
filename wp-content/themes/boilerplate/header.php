@@ -1,4 +1,4 @@
-<?php define('MINIFY', 1); ?>
+<?php define('MINIFY', 0); ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="no-js ie ie6 lte7 lte8 lte9" dir="<?php bloginfo('text_direction'); ?>" <?php language_attributes(); ?>><![endif]-->
 <!--[if IE 7 ]><html class="no-js ie ie7 lte7 lte8 lte9" dir="<?php bloginfo('text_direction'); ?>" <?php language_attributes(); ?>><![endif]-->
@@ -12,13 +12,13 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <?php $stylesheet_url = MINIFY ? "style.min.css" : "style.css"; ?>
     <link rel="stylesheet" href="<?php echo get_bloginfo('template_url').'/'.$stylesheet_url; ?>" />
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/foundation.min.css" />
-    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/grid.min.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/foundation<?php if(MINIFY) echo '.min'; ?>.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/grid<?php if(MINIFY) echo '.min'; ?>.css" />
     <?php
 		  //If you delete this line, the wordpress admin menu will not appear at the top of the page
 		  wp_head();
     ?>
-    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/navbar.min.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/navbar<?php if(MINIFY) echo '.min'; ?>.js"></script>
   </head>
 	<body <?php body_class(); ?>>
     <div id="wrapper">
