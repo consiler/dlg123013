@@ -1,0 +1,27 @@
+#three-column {
+    overflow: hidden;
+    padding-left: 23px; 
+}
+#three-column .row {
+    margin-top: 35px;
+}
+.threecolumn-cell {
+    padding-left: 70px!important;
+}
+.threecolumn-cell:first-child {
+    padding-left: 0!important;
+}
+.threecolumn-cell p {
+    color: #33332f;
+    font-family: 'hvnStd_Lite', Monaco;
+}
+.threecolumn-cell span {
+    margin-top: 15px;
+}
+.threecolumn-cell h4 {
+    color: #5197b4;
+    font-family: hvnStd_LiteCn;
+    font-size: 18pt;
+    letter-spacing: .04em;
+    padding-bottom: 4px;
+}
