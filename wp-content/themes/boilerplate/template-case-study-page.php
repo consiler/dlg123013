@@ -5,7 +5,7 @@
 
 get_header(); ?>
 <div id="internal-wrap">
-  <?php include 'large_internal_header.php';?>
+  <?php get_template_part('template', 'large-internal-header');?>
   <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
   <div id="internal-lower-wrap">
     <div id="internal-lower" class="centered">
