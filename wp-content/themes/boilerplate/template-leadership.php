@@ -5,11 +5,13 @@
 get_header(); ?>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/leadership.js"></script>
 <div id="internal-wrap">
-  <div id="leadership-banner-wrap">
-    <div id="leadership-banner" class="centered">
-      <img id="mark-highlight" src="<?php bloginfo('template_url'); ?>/images/leadership/mark.jpg" />
-      <img id="bob-highlight" src="<?php bloginfo('template_url'); ?>/images/leadership/bob.jpg" />
-      <img id="rob-highlight" src="<?php bloginfo('template_url'); ?>/images/leadership/rob.jpg" />
+  <div id="leadership-banner-bg">
+    <div id="leadership-banner-wrap" class="centered">
+      <div id="leadership-banner">
+        <img id="mark-highlight" src="<?php bloginfo('template_url'); ?>/images/leadership/mark.jpg" />
+        <img id="bob-highlight" src="<?php bloginfo('template_url'); ?>/images/leadership/bob.jpg" />
+        <img id="rob-highlight" src="<?php bloginfo('template_url'); ?>/images/leadership/rob.jpg" />
+      </div>
     </div>
   </div>
   <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
