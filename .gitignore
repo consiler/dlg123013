@@ -1,4 +1,4 @@
 wp-config.php
 .DS_Store
 .sass-cache
-style.css
+wp-content/themes/boilerplate/style.css
