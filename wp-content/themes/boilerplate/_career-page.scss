@@ -1,6 +1,6 @@
 #career-page{
   margin-top:50px;
-  
+
   h2{
     font-size:20pt;
     text-align:center;
@@ -8,7 +8,7 @@
     margin: 0 25px;
     line-height: 1.25em;
   }
-  .grey-button {
+  .career-learn-more-button {
     color: #464e52;
     display: inline-block;
     font-size: 10pt;
@@ -16,7 +16,24 @@
     line-height: 38px;
     margin-top: 20px;
     padding: 0 20px;
-    text-transform: uppercase;
-}
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  span {
+    background-color: #067489;
+  }
+
+  #career-learn-more-wrap{
+    margin: 0 auto;
+    width: 960px;
+    background-color: #eeeeee;
+  }
+
+  #career-learn-more{
+    margin: 0 auto;
+    width: 300px;
+  }
 
 }
