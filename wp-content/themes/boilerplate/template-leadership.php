@@ -33,22 +33,17 @@ get_header(); ?>
           </div>
         </article>
         <aside class="large-4 columns" id="leadership-sidebar">
-          <div id="default-sidebar">
-            <div class="huge-text">50%+</div>
-            <p>More than half of our clients are return customers. A repeat customer is someone you get to know.</p>
-          </div>
-          <div id="mark-sidebar">
-            <div class="huge-text">$1B+</div>
-            <p>As a corporate development executive, he has created over $1B in new venture revenue via acquisitions and alliances.</p>
-          </div>
-          <div id="bob-sidebar">
-            <div class="huge-text">100+</div>
-            <p>Bob has tied his own shoelaces over 100 times.</p>
-          </div>
-          <div id="rob-sidebar">
-            <div class="huge-text">25K+</div>
-            <p>Rob has inhaled over 25,000 times.</p>
-          </div>
+          <?php
+            $leaders = array("default", "mark", "bob", "rob");
+            foreach($leaders as $leader) {
+              ?>
+              <div id="<?php echo $leader; ?>-sidebar">
+                <div class="huge-text"><?php the_field($leader.'_statistic'); ?></div>
+                <p><?php the_field($leader.'_stat_description'); ?></p>
+              </div>
+              <?php
+            }
+          ?>
         </aside>
       </div>
       <?php get_template_part('template', 'right-sidebar'); ?>
