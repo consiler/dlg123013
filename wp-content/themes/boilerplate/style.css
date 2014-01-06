@@ -1333,3 +1333,10 @@ down every time */
 
 #mark-content, #bob-content, #rob-content, #mark-sidebar, #bob-sidebar, #rob-sidebar {
   display: none; }
+
+.career-page {
+  margin-top: 50px; }
+  .career-page h2 {
+    font-size: 20pt;
+    text-align: center;
+    color: #787878; }
