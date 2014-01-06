@@ -1,9 +1,22 @@
 #career-page{
   margin-top:50px;
+  
   h2{
     font-size:20pt;
     text-align:center;
     color:#787878;
+    margin: 0 25px;
+    line-height: 1.25em;
   }
+  .grey-button {
+    color: #464e52;
+    display: inline-block;
+    font-size: 10pt;
+    letter-spacing: 0.07em;
+    line-height: 38px;
+    margin-top: 20px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
 
 }

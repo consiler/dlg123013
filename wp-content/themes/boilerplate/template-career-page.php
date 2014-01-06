@@ -11,6 +11,9 @@ get_header(); ?>
         <div id="career-page">
           <h2><?php the_field('top_text'); ?></h2>
           <img src="<?php the_field('values_image');?>"/>
+          <div id="career-learn-more">
+            <a href="\our-team"><span class="light-grey-button">Learn more about our team</span></a>
+          </div>
         </div>
       </div>
     </div>
