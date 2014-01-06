@@ -3,6 +3,7 @@ Theme Name: Dialog Group
 Author: Maxwell Ponte and Sanford Morton
 Version: 2.6
 */
+/* Colors from the official Dialog branding document */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -851,6 +852,18 @@ span.lighter-grey-button {
 #nav-menu {
   position: relative;
   height: 71px; }
+  #nav-menu a {
+    color: #52524f;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.135em;
+    text-transform: uppercase; }
+    #nav-menu a:hover {
+      color: #156dc3;
+      text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.9); }
+  #nav-menu li.current_page_parent a {
+    color: #156dc3;
+    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.9); }
 
 #menu-top-navigation {
   overflow: hidden;
@@ -863,16 +876,6 @@ span.lighter-grey-button {
   margin-right: 35px;
   position: relative;
   padding-bottom: 18px; }
-
-#nav-menu a {
-  color: #52524f;
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  letter-spacing: 0.135em;
-  text-transform: uppercase; }
-  #nav-menu a:hover {
-    color: #156dc3;
-    text-shadow: 0px 0px 3px rgba(255, 255, 255, 0.9); }
 
 /* Sliding submenu wrapper */
 .sub-menu {
