@@ -1125,6 +1125,7 @@ down every time */
     color: #787878; }
     #internal-lower ul li {
       margin: 15px 0;
+      margin-left: 15px;
       font-size: 10pt; }
   #internal-lower h2 {
     color: #5197b4;
@@ -1305,3 +1306,23 @@ down every time */
     content: url(/wp-content/themes/boilerplate/images/story/slide2.jpg); }
   #story-block #do:after {
     content: url(/wp-content/themes/boilerplate/images/story/slide3.jpg); }
+
+#leadership-banner-wrap {
+  background-color: #a3a3a3; }
+
+#leadership-banner {
+  height: 455px;
+  background-image: url(images/leadership/default.jpg); }
+  #leadership-banner > img {
+    display: none; }
+
+#leadership-main {
+  margin-top: 35px; }
+
+.huge-text {
+  font-size: 60px; }
+
+#leadership-sidebar span, #leadership-sidebar p {
+  color: #518fcc; }
+#leadership-sidebar span {
+  text-align: center; }

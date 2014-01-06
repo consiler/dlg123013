@@ -1,0 +1,24 @@
+#leadership-banner-wrap {
+  background-color: #a3a3a3;
+}
+#leadership-banner {
+  height: 455px;
+  background-image: url(images/leadership/default.jpg);
+  & > img {
+    display: none;
+  }
+}
+#leadership-main {
+  margin-top: 35px;
+}
+.huge-text {
+  font-size: 60px;
+}
+#leadership-sidebar {
+  span, p {
+    color: $dialogblue;
+  }
+  span {
+    text-align: center;
+  }
+}
