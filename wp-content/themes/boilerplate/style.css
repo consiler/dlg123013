@@ -4,6 +4,7 @@ Author: Maxwell Ponte and Sanford Morton
 Version: 2.6
 */
 /* Colors from the official Dialog branding document */
+/* Quick Access Variables */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -443,7 +444,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*! main.css  */
+/* main.css  */
 /*
  * HTML5 Boilerplate
  *
@@ -747,10 +748,10 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0px auto -195px; }
+  margin: 0px auto -200px; }
 
 .push {
-  height: 195px; }
+  height: 200px; }
 
 a {
   text-decoration: none; }
@@ -1183,7 +1184,7 @@ down every time */
       font-size: 11.5px;
       color: #33332f; }
   .footer-wrap .footer-inner {
-    height: 195px;
+    height: 200px;
     padding: 20px 0 0 0;
     margin: 0 auto;
     width: 1024px;
@@ -1194,7 +1195,7 @@ down every time */
   #menu-top-navigation-1 > li {
     display: inline-block;
     width: 8%;
-    height: 180px;
+    height: 185px;
     padding: 0 1% 30px 1%;
     text-align: left;
     word-wrap: break-word;
@@ -1223,7 +1224,7 @@ down every time */
   list-style: none; }
   #menu-dlg_footer > li {
     padding: 0;
-    margin-right: 62px;
+    margin-right: 45px;
     display: block;
     float: left; }
     #menu-dlg_footer > li > a {
@@ -1241,8 +1242,9 @@ down every time */
 
 .copyright {
   position: absolute;
-  left: 825px;
-  top: 55px; }
+  left: 684px;
+  top: 130px;
+  width: 175px; }
   .copyright hr {
     border-color: #5b5b5c;
     margin-bottom: 7px; }

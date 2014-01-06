@@ -4,7 +4,7 @@
  */
 get_header(); ?>
 <div id="internal-wrap">
-  <?php include 'internal_header.php'; ?>
+  <?php get_template_part('template', 'internal-header'); ?>
   <div id="internal-lower-wrap">
     <div id="internal-lower" class="centered">
       <div id="internal-main" class="internal-main-fullwidth">
