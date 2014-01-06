@@ -7,9 +7,11 @@ get_header(); ?>
   <?php get_template_part('template', 'internal-header'); ?>
   <div id="internal-lower-wrap">
     <div id="internal-lower" class="centered">
-      <div id="internal-main" class="internal-main-fullwidth career-page">
-        <h2><?php the_field('top_text'); ?></h2>
-        <img src="<?php the_field('values_image');?>"/>
+      <div id="internal-main" class="internal-main-fullwidth">
+        <div id="career-page">
+          <h2><?php the_field('top_text'); ?></h2>
+          <img src="<?php the_field('values_image');?>"/>
+        </div>
       </div>
     </div>
   </div>
