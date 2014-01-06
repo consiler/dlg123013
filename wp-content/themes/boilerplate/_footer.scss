@@ -12,7 +12,7 @@
     }
   }
   .footer-inner {
-    height: 165px;
+    height: $footer-height;
     padding: 20px 0 0 0;
     margin: 0 auto;
     width: 1024px;
@@ -25,7 +25,7 @@
   & > li {
     display: inline-block;
     width: 8%;
-    height: 150px;
+    height: $footer-height - 15px;
     padding: 0 1% 30px 1%;
     text-align: left;
     word-wrap: break-word;

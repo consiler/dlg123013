@@ -747,10 +747,10 @@ html, body {
   min-height: 100%;
   height: auto !important;
   height: 100%;
-  margin: 0px auto -165px; }
+  margin: 0px auto -195px; }
 
 .push {
-  height: 165px; }
+  height: 195px; }
 
 a {
   text-decoration: none; }
@@ -1183,7 +1183,7 @@ down every time */
       font-size: 11.5px;
       color: #33332f; }
   .footer-wrap .footer-inner {
-    height: 165px;
+    height: 195px;
     padding: 20px 0 0 0;
     margin: 0 auto;
     width: 1024px;
@@ -1194,7 +1194,7 @@ down every time */
   #menu-top-navigation-1 > li {
     display: inline-block;
     width: 8%;
-    height: 150px;
+    height: 180px;
     padding: 0 1% 30px 1%;
     text-align: left;
     word-wrap: break-word;
