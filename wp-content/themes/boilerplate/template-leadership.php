@@ -3,7 +3,7 @@
  * Template Name: Leadership Page
  */
 get_header(); ?>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/leadership.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/leadership.min.js"></script>
 <div id="internal-wrap">
   <div id="leadership-banner-bg">
     <div id="leadership-banner-wrap" class="centered">
