@@ -1340,8 +1340,15 @@ down every time */
     font-family: "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     color: #979696;
     margin: 15px 0;
-    font-size: 28pt; }
+    font-size: 29pt; }
 
 #k12-intro {
   padding-left: 455px;
   padding-right: 45px; }
+
+.career-page {
+  margin-top: 50px; }
+  .career-page h2 {
+    font-size: 20pt;
+    text-align: center;
+    color: #787878; }
