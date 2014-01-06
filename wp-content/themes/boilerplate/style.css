@@ -442,7 +442,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*! main.css  */
+/* main.css  */
 /*
  * HTML5 Boilerplate
  *
@@ -1135,7 +1135,7 @@ down every time */
     letter-spacing: .04em; }
   #internal-lower p {
     padding: 10px 0;
-    font-size: 11pt; }
+    font-size: 10pt; }
   #internal-lower em {
     font-style: italic; }
   #internal-lower h5 {
