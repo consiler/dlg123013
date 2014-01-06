@@ -442,7 +442,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* main.css  */
+/*! main.css  */
 /*
  * HTML5 Boilerplate
  *
@@ -1135,7 +1135,7 @@ down every time */
     letter-spacing: .04em; }
   #internal-lower p {
     padding: 10px 0;
-    font-size: 10pt; }
+    font-size: 11pt; }
   #internal-lower em {
     font-style: italic; }
   #internal-lower h5 {
@@ -1320,9 +1320,11 @@ down every time */
   margin-top: 35px; }
 
 .huge-text {
-  font-size: 60px; }
-
-#leadership-sidebar span, #leadership-sidebar p {
-  color: #518fcc; }
-#leadership-sidebar span {
+  font-size: 100px;
   text-align: center; }
+
+#leadership-sidebar div, #leadership-sidebar p {
+  color: #518fcc; }
+
+#mark-content, #bob-content, #rob-content, #mark-sidebar, #bob-sidebar, #rob-sidebar {
+  display: none; }

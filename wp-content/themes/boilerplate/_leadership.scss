@@ -12,13 +12,14 @@
   margin-top: 35px;
 }
 .huge-text {
-  font-size: 60px;
+  font-size: 100px;
+  text-align: center;
 }
 #leadership-sidebar {
-  span, p {
+  div, p {
     color: $dialogblue;
   }
-  span {
-    text-align: center;
-  }
+}
+#mark-content, #bob-content, #rob-content, #mark-sidebar, #bob-sidebar, #rob-sidebar {
+  display: none;
 }
