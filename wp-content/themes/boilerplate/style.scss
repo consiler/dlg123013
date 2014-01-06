@@ -8,7 +8,6 @@ $font-stack: "pragmatica-web","HelveticaNeue-Light", "Helvetica Neue Light", "He
 $nav-font-stack: Arial, sans-serif;
 $heading-font-stack: hvnStd_LiteCn, "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
-
 /* Colors from the official Dialog branding document */
 $dialogblue: #518fcc;
 $dialogbrown: #572700;
@@ -32,4 +31,4 @@ $footer-margin: 45px;
 
 @import 'normalize', 'basic', 'cta', 'logo', 'social', 'topnav',
         'slideshow', 'fp-testimonials', 'three-column', 'internal-header',
-        'internal-content', 'footer', 'our-story', 'leadership';
+        'internal-content', 'footer', 'our-story', 'leadership', 'k12';

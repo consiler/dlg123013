@@ -444,7 +444,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* main.css  */
+/*! main.css  */
 /*
  * HTML5 Boilerplate
  *
@@ -1333,3 +1333,15 @@ down every time */
 
 #mark-content, #bob-content, #rob-content, #mark-sidebar, #bob-sidebar, #rob-sidebar {
   display: none; }
+
+#k12-wrap {
+  color: #787878; }
+  #k12-wrap h2 {
+    font-family: "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #979696;
+    margin: 15px 0;
+    font-size: 28pt; }
+
+#k12-intro {
+  padding-left: 455px;
+  padding-right: 45px; }
