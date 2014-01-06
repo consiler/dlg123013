@@ -1,6 +1,8 @@
 #k12-wrap {
   color: #787878;
+  font-weight: 400;
   h2 {
+    font-weight: 300;
     font-family: $font-stack;
     color: #979696;
     margin: 15px 0;
@@ -10,4 +12,6 @@
 #k12-intro {
   padding-left: 455px;
   padding-right: 45px;
+  height: 535px;
+  background-image: url(images/k12/k12_section1_bg.jpg);
 }

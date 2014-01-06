@@ -10,8 +10,7 @@ get_header(); ?>
     <div id="internal-lower" class="centered">
       <div id="k12-wrap">
         <div id="k12-intro">
-          <h2>Classrooms and Opportunities Transformed</h2>
-          <p>;ladjsfniaprngkl;asd</p>
+          <?php the_field('introduction_copy'); ?>
         </div>
       </div>
     </div>
