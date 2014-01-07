@@ -13,20 +13,20 @@ get_header(); ?>
           <?php the_field('introduction_copy'); ?>
         </div>
         <div id="k12-promo-slider">
-          <ul data-orbit>
+          <div data-orbit>
             <li data-orbit-slide="headline-1">
-              <div>
+              <div class="promo-slide">
                 <h2>Headline 1</h2>
                 <h3>Subheadline</h3>
               </div>
             </li>
             <li data-orbit-slide="headline-2">
-              <div>
+              <div class="promo-slide">
                 <h2>Headline 2</h2>
                 <h3>Subheadline</h3>
               </div>
             </li>
-          </ul>
+          </div>
         </div>
         <div id="k12-faculty">
           <?php the_field('faculty_copy'); ?>
@@ -36,4 +36,14 @@ get_header(); ?>
   </div>
   <?php endwhile; ?>
 </div>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+  jQuery(document).foundation({
+    orbit: {
+      animation: 'fade',
+      navigation_arrows: false
+    }
+  });
+});
+</script>
 <?php get_footer(); ?>

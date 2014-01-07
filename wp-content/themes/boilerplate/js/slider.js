@@ -1,4 +1,3 @@
-//asdf
 jQuery(document).ready(function() {
   $("#fp-slideshow-container").on("ready.fndtn.orbit", function(event) {
     $(".orbit-prev").hide();
