@@ -7,7 +7,14 @@
 <!--[if (gt IE 9)|!(IE)]><!--><html class="no-js" dir="<?php bloginfo('text_direction'); ?>" <?php language_attributes(); ?>><!--<![endif]-->
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>" />
-		<title>Dialog Group</title>
+		<title>
+      <?php
+        if(is_front_page())
+          echo 'Dialog Group';
+        else
+          wp_title('Dialog Group | ');
+      ?>
+    </title>
     <script type="text/javascript" src="//use.typekit.net/jbf6iic.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <?php $stylesheet_url = MINIFY ? "style.min.css" : "style.css"; ?>
