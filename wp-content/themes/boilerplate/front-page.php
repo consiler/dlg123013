@@ -5,7 +5,7 @@
 get_header(); ?>
 <div id="fp-slideshow-wrap">
   <div class="centered">
-  <div class="example-orbit" data-orbit>
+  <div data-orbit>
     <!-- Start of Front Page Slides Repeater -->
     <?php if(get_field('front_page_slides')): ?>
       <?php while(has_sub_field('front_page_slides')): ?>

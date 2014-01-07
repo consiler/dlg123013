@@ -5,13 +5,21 @@
     font-weight: 300;
     font-family: $font-stack;
     color: #979696;
-    margin: 15px 0;
+    padding: 15px 0;
     font-size: 29pt;
   }
 }
 #k12-intro {
+  padding-top: 15px;
   padding-left: 455px;
   padding-right: 45px;
-  height: 535px;
+  height: 520px;
   background-image: url(images/k12/k12_section1_bg.jpg);
+}
+#k12-faculty {
+  padding-top: 15px;
+  padding-right: 500px;
+  padding-left: 180px;
+  height: 410px;
+  background-image: url(images/k12/k12_section3_bg.jpg);
 }

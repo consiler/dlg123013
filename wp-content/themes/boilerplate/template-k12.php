@@ -12,6 +12,25 @@ get_header(); ?>
         <div id="k12-intro">
           <?php the_field('introduction_copy'); ?>
         </div>
+        <div id="k12-promo-slider">
+          <ul data-orbit>
+            <li data-orbit-slide="headline-1">
+              <div>
+                <h2>Headline 1</h2>
+                <h3>Subheadline</h3>
+              </div>
+            </li>
+            <li data-orbit-slide="headline-2">
+              <div>
+                <h2>Headline 2</h2>
+                <h3>Subheadline</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div id="k12-faculty">
+          <?php the_field('faculty_copy'); ?>
+        </div>
       </div>
     </div>
   </div>
