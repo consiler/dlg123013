@@ -14,7 +14,7 @@ get_header(); ?>
         </div>
         <?php if(get_field('promo_slider')) { ?>
         <div id="k12-promo-slider">
-          <div data-orbit data-options="animation:fade; timer:false; animation_speed:300; navigation_arrows:false; bullets_container_class:orbit-glowing-bullets; pause_on_hover:false; next_on_click:false; bullets:true; slide_number:false">
+          <div id="k12-promo-slider-orbit" data-orbit data-options="animation:fade; timer:false; animation_speed:300; navigation_arrows:false; bullets_container_class:orbit-glowing-bullets; pause_on_hover:false; next_on_click:false; bullets:true; slide_number:false">
             <?php
             $slideNum = 0;
             while(has_sub_field('promo_slider')) {
@@ -26,17 +26,16 @@ get_header(); ?>
                   <?php the_sub_field('slide_text'); ?>
                 </div>
                 <?php if(get_sub_field('promo_tile_sub_slider')) { ?>
-                <div class="promo-slide-tile-slider">
-                  <div class="nested-slider" data-options="animation:fade; timer:false; animation_speed:300; navigation_arrows:false; bullets_container_class:orbit-bullets; pause_on_hover:false; next_on_click:false; bullets:true; slide_number:false">
-                    <?php
-                    $tileSlideNum = 0;
-                    while(has_sub_field('promo_tile_sub_slider')) {
-                      $tileSlideNum++;
-                      if($tileSlideNum >= 2) break;
-                      $promo_object = get_sub_field('promo_tile');
-                    ?>
-                    <img src="<?php the_field('image', $promo_object->ID); ?>">
-                    <?php } ?>
+                <div class="promo-slide-tile-slider-wrap">
+                  <div class="promo-slide-tile-slider">
+                    <ul>
+                      <?php
+                      while(has_sub_field('promo_tile_sub_slider')) {
+                        $promo_object = get_sub_field('promo_tile');
+                      ?>
+                      <li><div class="promo-slide-imgwrap"><img src="<?php the_field('image', $promo_object->ID); ?>"><div></li>
+                      <?php } ?>
+                    </ul>
                   </div>
                 </div>
                 <?php } ?>
@@ -46,8 +45,6 @@ get_header(); ?>
           </div>
         </div>
         <? } ?>
-        <div id="unslider-test">
-        </div>
         <div id="k12-faculty">
           <?php the_field('faculty_copy'); ?>
         </div>
@@ -56,9 +53,13 @@ get_header(); ?>
   </div>
   <?php endwhile; ?>
 </div>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/unslider.js"></script>
 <script type="text/javascript">
-jQuery(document).ready(function(){
-  jQuery(document).foundation();
+$("#k12-promo-slider-orbit").on("ready.fndtn.orbit", function(event) {
+  $('.promo-slide-tile-slider').unslider({dots: true, speed:1000, delay:9999999999});
+});
+$(document).ready(function(){
+  $(document).foundation();
 });
 </script>
 <?php get_footer(); ?>
