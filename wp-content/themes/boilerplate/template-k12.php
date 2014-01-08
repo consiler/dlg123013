@@ -12,21 +12,41 @@ get_header(); ?>
         <div id="k12-intro">
           <?php the_field('introduction_copy'); ?>
         </div>
+        <?php if(get_field('promo_slider')) { ?>
         <div id="k12-promo-slider">
-          <div data-orbit>
-            <li data-orbit-slide="headline-1">
+          <div data-orbit data-options="animation:fade; timer:false; animation_speed:300; navigation_arrows:false; bullets_container_class:orbit-glowing-bullets; pause_on_hover:false; next_on_click:false; bullets:true; slide_number:false">
+            <?php
+            $slideNum = 0;
+            while(has_sub_field('promo_slider')) {
+              $slideNum++;
+            ?>
+            <li data-orbit-slide="promo-slide-<?php echo $slideNum; ?>">
               <div class="promo-slide">
-                <h2>Headline 1</h2>
-                <h3>Subheadline</h3>
+                <div class="promo-slide-text">
+                  <?php the_sub_field('slide_text'); ?>
+                </div>
+                <?php if(get_sub_field('promo_tile_sub_slider')) { ?>
+                <div class="promo-slide-tile-slider">
+                  <div class="nested-slider" data-options="animation:fade; timer:false; animation_speed:300; navigation_arrows:false; bullets_container_class:orbit-bullets; pause_on_hover:false; next_on_click:false; bullets:true; slide_number:false">
+                    <?php
+                    $tileSlideNum = 0;
+                    while(has_sub_field('promo_tile_sub_slider')) {
+                      $tileSlideNum++;
+                      if($tileSlideNum >= 2) break;
+                      $promo_object = get_sub_field('promo_tile');
+                    ?>
+                    <img src="<?php the_field('image', $promo_object->ID); ?>">
+                    <?php } ?>
+                  </div>
+                </div>
+                <?php } ?>
               </div>
             </li>
-            <li data-orbit-slide="headline-2">
-              <div class="promo-slide">
-                <h2>Headline 2</h2>
-                <h3>Subheadline</h3>
-              </div>
-            </li>
+            <?php } ?>
           </div>
+        </div>
+        <? } ?>
+        <div id="unslider-test">
         </div>
         <div id="k12-faculty">
           <?php the_field('faculty_copy'); ?>
@@ -38,12 +58,7 @@ get_header(); ?>
 </div>
 <script type="text/javascript">
 jQuery(document).ready(function(){
-  jQuery(document).foundation({
-    orbit: {
-      animation: 'fade',
-      navigation_arrows: false
-    }
-  });
+  jQuery(document).foundation();
 });
 </script>
 <?php get_footer(); ?>

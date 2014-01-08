@@ -1,0 +1,50 @@
+/* $bullet-list-max-length >= 2 */
+$bullet-list-max-length: 9;
+$bullet-list-max-width: 180px;
+$bullet-diameter: 25px;
+
+.orbit-glowing-bullets {
+  margin-left: -90px;
+  left: 50%;
+  position: absolute;
+  top: 40px;
+  float: none;
+  text-align: center;
+  display: inline-block;
+  z-index: 1010;
+  height: $bullet-diameter;
+  background-image: url(images/bullet-stripe.gif);
+  background-position: center;
+  background-repeat: repeat-x;
+  li {
+    float: left;
+    cursor: pointer;
+    text-indent: -9999px;
+    background-image: url(images/slider-bullet.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: $bullet-diameter;
+    height: $bullet-diameter;
+    overflow: hidden;
+    &.active {
+      background-image: url(images/slider-bullet-active.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &:first-child {
+      margin-left: -4px;
+    }
+    &:last-child {
+      margin-right: -4px;
+    }
+    &:last-child:after {
+      clear: left;
+    }
+    /* evenly spaces the bullets */
+    @for $i from 2 through $bullet-list-max-length {
+      &:first-child:nth-last-child(#{$i}) ~ li {
+        margin-left: ($bullet-list-max-width - $bullet-diameter) / ($i - 1);
+      }
+    }
+  }
+}
