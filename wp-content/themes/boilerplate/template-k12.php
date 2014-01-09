@@ -33,7 +33,7 @@ get_header(); ?>
                       while(has_sub_field('promo_tile_sub_slider')) {
                         $promo_object = get_sub_field('promo_tile');
                       ?>
-                      <li><div class="promo-slide-imgwrap"><img src="<?php the_field('image', $promo_object->ID); ?>"><div></li>
+                      <li><div class="promo-slide-imgwrap"><a href="<?php the_field('link_url', $promo_object->ID); ?>"><img src="<?php the_field('image', $promo_object->ID); ?>"></a><div></li>
                       <?php } ?>
                     </ul>
                   </div>
