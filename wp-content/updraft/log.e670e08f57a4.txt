@@ -1,0 +1,7 @@
+0000.000 (0) Opened log file at time: Tue, 07 Jan 2014 18:29:09 +0000
+0000.001 (0) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.8.2 WP: 3.8 PHP: 5.5.3 (Darwin Wills-MacBook-Pro.local 13.0.2 Darwin Kernel Version 13.0.2: Sun Sep 29 19:38:57 PDT 2013; root:xnu-2422.75.4~1/RELEASE_X86_64 x86_64) MySQL: 5.5.33 Server: Apache/2.2.25 (Unix) mod_ssl/2.2.25 OpenSSL/0.9.8y DAV/2 PHP/5.5.3 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 2.6M | 2.8M) multisite: N mcrypt: Y ZipArchive::addFile: Y W3TC/ObjectCache: N
+0000.002 (0) Free space on disk containing Updraft's temporary directory: 441361.1 Mb
+0000.004 (0) Tasks: Backup files:  (schedule: daily) Backup DB: 1 (schedule: daily)
+0000.004 (0) Processed schedules. Tasks now: Backup files:  Backup DB: 
+0000.005 (0) No email will be sent - this backup set was empty.
+0000.006 (0) The backup apparently succeeded and is now complete
