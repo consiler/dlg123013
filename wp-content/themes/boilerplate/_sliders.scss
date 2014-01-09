@@ -20,10 +20,13 @@ $sub-slider-bullet-diameter: 10px;
   li {
     float: left;
     cursor: pointer;
-    text-indent: -9999px;
     background-image: url(images/slider-bullet.png);
     background-position: center;
     background-repeat: no-repeat;
+    line-height: $bullet-diameter;
+    color: #fff;
+    font-weight: 200;
+    font-size: 11px;
     width: $bullet-diameter;
     height: $bullet-diameter;
     overflow: hidden;
@@ -79,8 +82,8 @@ $sub-slider-bullet-diameter: 10px;
 }
 .dots {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  bottom: 5px;
+  right: 5px;
   overflow: hidden;
 }
 .dot {
@@ -97,7 +100,7 @@ $sub-slider-bullet-diameter: 10px;
   }
 }
 .promo-slide-imgwrap {
-  height: 238px;
+  height: 283px;
   overflow: hidden;
   position: relative;
   & > img {

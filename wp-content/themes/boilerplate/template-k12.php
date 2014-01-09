@@ -57,7 +57,7 @@ get_header(); ?>
 <script type="text/javascript">
 $("#k12-promo-slider-orbit").on("ready.fndtn.orbit", function(event) {
   $('.orbit-glowing-bullets > li').each(function(i, blt) {
-    $(this).html(''+i);
+    $(this).html(''+(i+1));
   });
   $('.promo-slide-tile-slider').unslider({dots: true, speed:1000, delay:5000});
 });

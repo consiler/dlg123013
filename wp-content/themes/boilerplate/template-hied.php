@@ -12,6 +12,23 @@ get_header(); ?>
         <div id="hied-intro">
           <?php the_field('introduction_copy'); ?>
         </div>
+        <div id="hied-opportunity">
+          <div id="hied-opportunity-stats-wrap">
+            <div class="huge-text"><?php the_field('opportunity_stat1'); ?></div>
+            <p><?php the_field('opportunity_stat1_caption'); ?></p>
+            <div class="huge-text"><?php the_field('opportunity_stat2'); ?></div>
+            <p><?php the_field('opportunity_stat2_caption'); ?></p>
+          </div>
+          <div id="hied-opportunity-copy">
+            <?php the_field('opportunity_copy'); ?>
+          </div>
+          <div id="hied-opportunity-promos">
+            <div id="hied-opportunity-promos-tile-1">
+            </div>
+            <div id="hied-opportunity-promos-tile-1">
+            </div>
+          </div>
+        </div>
         <div id="hied-faculty">
           <?php the_field('faculty_copy'); ?>
         </div>

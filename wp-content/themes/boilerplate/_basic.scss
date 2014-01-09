@@ -13,6 +13,7 @@ html, body {
    font-weight: 300;
    height: 100%;
    min-height: 100%;
+   background-color: #fafafa;
 }
 #wrapper {
   min-height: 100%;
@@ -43,4 +44,8 @@ blockquote {
 .centered {
     width: 1024px;
     margin: 0 auto;
+}
+.huge-text {
+  font-size: 100px;
+  text-align: center;
 }

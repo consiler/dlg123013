@@ -33,3 +33,16 @@
   height: 407px;
   background-image: url(images/hied/hied_faculty.jpg);
 }
+#hied-opportunity {
+  overflow: hidden;
+  height: 780px;
+  padding-left: 180px;
+  padding-right: 90px;
+}
+#hied-opportunity-stats-wrap {
+  width: 225px;
+}
+.huge-text + p {
+  text-transform: uppercase;
+  color: $dialogblue;
+}
