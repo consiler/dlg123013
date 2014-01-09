@@ -56,7 +56,10 @@ get_header(); ?>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/unslider.js"></script>
 <script type="text/javascript">
 $("#k12-promo-slider-orbit").on("ready.fndtn.orbit", function(event) {
-  $('.promo-slide-tile-slider').unslider({dots: true, speed:1000, delay:9999999999});
+  $('.orbit-glowing-bullets > li').each(function( i, val ) {
+  });
+  $( "#" + val ).text( "Mine is " + val + "." );
+  $('.promo-slide-tile-slider').unslider({dots: true, speed:1000, delay:5000});
 });
 $(document).ready(function(){
   $(document).foundation();
