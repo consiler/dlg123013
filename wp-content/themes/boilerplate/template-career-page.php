@@ -27,19 +27,18 @@ get_header(); ?>
               <img id="open-jobs"src="<?php the_field('open_jobs_image')?>">
             </div>
             <div id="job-listings">
-            <h2 id="position">Position</h2>
-            <h2 id="location">Location</h2>
-              <section id="jobs">            
+              <h2 id="position">Position</h2>
+              <h2 id="location">Location</h2>
+               <section id="jobs">            
                 <? $args = array( 'post_type' => 'job_listings' );
-              $loop = new WP_Query( $args );
-              while ( $loop->have_posts() ) : $loop->the_post();
-                ?>
-                    <header class="jobs-header">
-                      <div class="jobs-pos"><?php the_field('position');?></div>
-                      <div class="jobs-loc"><?php the_field('location');?></div>
-                      <div class="jobs-item-image">
-                        <a href="#">
-                          <img src="http://dialog.local/wp-content/uploads/2013/12/job-detail-button_16.png"/>
+                   $loop = new WP_Query( $args );
+                   while ( $loop->have_posts() ) : $loop->the_post();?>
+                <header class="jobs-header">
+                  <div class="jobs-pos"><?php the_field('position');?></div>
+                  <div class="jobs-loc"><?php the_field('location');?></div>
+                  <div class="jobs-item-image">
+                  <a href="#">
+                          <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2013/12/job-detail-button_16.png"/>
                         </a>
                       </div>
                       
