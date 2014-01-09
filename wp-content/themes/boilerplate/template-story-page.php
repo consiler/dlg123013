@@ -5,14 +5,14 @@
 
 get_header(); ?>
 <div id="internal-wrap">
-  <div id="large-internal-header-wrap" style="display:none;">
-    <div id="large-internal-header" class="centered" style="background:url(<?php the_field('page_heading_image'); ?>); background-repeat: no-repeat; background-position:right;">
-      <header id="large-internal-header-text">
-        <h1><?php the_field('page_heading_text'); ?></h1>
-        <p><?php the_field('page_subheading_text'); ?></p>
-      </header>
+  <?php get_template_part('template', 'internal-header'); ?>
+
+    <div id="k12-intro" style="background:url(<?php the_field('intro_bg'); ?>); background-repeat: no-repeat; background-position:right;">
+      <?php the_field('introduction_copy'); ?>
     </div>
-  </div>
+
+
+
 
 <!-- Start of blocks -->
 
