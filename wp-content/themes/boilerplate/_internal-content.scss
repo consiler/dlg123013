@@ -12,6 +12,7 @@
     padding-top: 43px;
     padding-right: 20px;
     padding-left: 35px;
+    padding-bottom: 60px;
     color: #787878;
     &.secondary {
         width: 632px;
@@ -24,7 +25,6 @@
 }
 #internal-lower {
     overflow: hidden;
-    padding-bottom: 60px;
     b {
         font-weight: bold;
     }
@@ -34,7 +34,7 @@
         li {
             margin: 15px 0;
             margin-left: 15px;
-            font-size: 10pt;
+            font-size: 11pt;
         }
     }
     h2 {

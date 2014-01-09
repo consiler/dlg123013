@@ -24,6 +24,9 @@ $beige: #c5c19d;
 $beige2: #e1dcc9;
 $beige3: #f4f1e9;
 
+/* additional common colors */
+$electric-blue: #59bce1;
+
 /* Quick Access Variables */
 $footer-height: 200px;
 $footer-margin: 45px;
@@ -31,4 +34,5 @@ $footer-margin: 45px;
 
 @import 'normalize', 'basic', 'cta', 'logo', 'social', 'topnav',
         'slideshow', 'fp-testimonials', 'three-column', 'internal-header',
-        'internal-content', 'footer', 'our-story', 'leadership', 'k12', 'career-page','internal-sidebar';
+        'internal-content', 'footer', 'our-story', 'leadership', 'k12',
+        'career-page','internal-sidebar','sliders','hied';

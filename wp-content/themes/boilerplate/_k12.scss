@@ -2,11 +2,19 @@
   color: #787878;
   font-weight: 400;
   h2 {
-    font-weight: 300;
+    font-weight: 200;
     font-family: $font-stack;
     color: #979696;
     padding: 15px 0;
-    font-size: 29pt;
+    font-size: 30pt;
+  }
+  p {
+    font-size: 11pt;
+  }
+  h5 {
+    color: #518fcc;
+    text-transform: uppercase;
+    font-weight: 600;
   }
 }
 #k12-intro {
@@ -22,17 +30,4 @@
   padding-left: 180px;
   height: 410px;
   background-image: url(images/k12/k12_section3_bg.jpg);
-}
-.promo-slide {
-  height: 505px;
-  padding-left: 180px;
-  padding-top: 15px;
-  background: #eeeeee;
-  background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc));
-  background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
-  background: -o-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
-  background: -ms-linear-gradient(top,  #eeeeee 0%,#cccccc 100%);
-  background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
 }
