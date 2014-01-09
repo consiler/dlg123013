@@ -13,19 +13,26 @@ get_header(); ?>
           <?php the_field('introduction_copy'); ?>
         </div>
         <div id="hied-opportunity">
-          <div id="hied-opportunity-stats-wrap">
-            <div class="huge-text"><?php the_field('opportunity_stat1'); ?></div>
-            <p><?php the_field('opportunity_stat1_caption'); ?></p>
-            <div class="huge-text"><?php the_field('opportunity_stat2'); ?></div>
-            <p><?php the_field('opportunity_stat2_caption'); ?></p>
+          <div id="hied-opportunity-main">
+            <div id="hied-opportunity-stats-wrap">
+              <div class="huge-text"><?php the_field('opportunity_stat1'); ?></div>
+              <p><?php the_field('opportunity_stat1_caption'); ?></p>
+              <div class="seperator"></div>
+              <div class="huge-text"><?php the_field('opportunity_stat2'); ?></div>
+              <p><?php the_field('opportunity_stat2_caption'); ?></p>
+            </div>
+            <div id="hied-opportunity-copy">
+              <?php the_field('opportunity_copy'); ?>
+            </div>
           </div>
-          <div id="hied-opportunity-copy">
-            <?php the_field('opportunity_copy'); ?>
-          </div>
+          <div class="seperator"></div>
           <div id="hied-opportunity-promos">
             <div id="hied-opportunity-promos-tile-1">
+              <?php $promo_object = get_field('opp_promo_tile'); ?>
+              <a href="<?php the_field('link_url', $promo_object->ID); ?>"><img src="<?php the_field('image', $promo_object->ID); ?>"></a>
             </div>
-            <div id="hied-opportunity-promos-tile-1">
+            <div id="hied-opportunity-promos-tile-2">
+              <a href="mailto:education@dialoggroup.com"><img src="<?php bloginfo('template_url'); ?>/images/hied/hied-trade-shows.gif"></a>
             </div>
           </div>
         </div>

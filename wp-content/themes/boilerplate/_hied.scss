@@ -6,10 +6,10 @@
     font-family: $font-stack;
     color: #979696;
     padding: 15px 0;
-    font-size: 29pt;
+    font-size: 28pt;
   }
   p {
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 #hied-intro {
@@ -34,15 +34,51 @@
   background-image: url(images/hied/hied_faculty.jpg);
 }
 #hied-opportunity {
-  overflow: hidden;
-  height: 780px;
   padding-left: 180px;
   padding-right: 90px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+#hied-opportunity-main {
+  overflow: hidden;
 }
 #hied-opportunity-stats-wrap {
   width: 225px;
+  float: left;
+}
+#hied-opportunity-copy {
+  float: right;
+  width: 480px;
+}
+#hied-opportunity-promos {
+  margin-top: 10px;
+  overflow: hidden;
+}
+#hied-opportunity-promos-tile-1 {
+  width: 283px;
+  float: left;
+}
+#hied-opportunity-promos-tile-2 {
+  width: 385px;
+  float: right;
+  img {
+    display: block;
+  }
 }
 .huge-text + p {
   text-transform: uppercase;
   color: $dialogblue;
+  line-height: 17px;
+  padding: 0!important;
+}
+.huge-text {
+  color: $dialogblue;
+  font-weight: 200;
+  font-size: 90px;
+  text-align: left;
+}
+.seperator {
+  background-color: #e7e7e7;
+  height: 3px;
+  margin: 20px 0;
 }
