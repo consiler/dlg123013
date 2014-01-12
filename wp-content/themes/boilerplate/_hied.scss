@@ -10,11 +10,16 @@
   }
   p {
     font-size: 13px;
+    line-height: 1.5em;
   }
   h5 {
     color: #518fcc;
     text-transform: uppercase;
     font-weight: 600;
+  }
+  li{
+    font-size: 13px;
+    line-height: .5em;
   }
 }
 #hied-intro {
@@ -29,9 +34,6 @@
   background-image: url(images/hied/hied_introduction.jpg);
 }
 #hied-faculty {
-  h2 {
-    padding-bottom: 0;
-  }
   padding-top: 15px;
   padding-right: 550px;
   padding-left: 180px;
