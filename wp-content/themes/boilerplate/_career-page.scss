@@ -1,0 +1,117 @@
+#career-page {
+  margin-top:50px;
+
+  h2 {
+    font-size:20pt;
+    text-align:center;
+    color:#787878;
+    margin: 0 25px;
+    line-height: 1.25em;
+  }
+  #value h2{
+
+  font-size: 36px;
+  line-height: 0.667;
+  text-align: center;
+  
+  }
+  #value h3{
+  font-size: 28px;
+  line-height: 0.857;
+  text-align: center;
+}
+  .threecolumn-cell h4{ // hides the "Empty" header from 3 col layout
+    display:none;
+  }
+  .threecolumn-cell .blue{
+    color: #5197b4;
+    font-family: hvnStd_LiteCn, "pragmatica-web", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 18pt;
+    letter-spacing: .04em;
+  }
+  .threecolumn-cell p {
+    color: #787878;
+  }
+
+  .career-learn-more-button {
+    color: #fff;
+    display: inline-block;
+    font-size: 19pt;
+    letter-spacing: 0.07em;
+    line-height: 38px;
+    margin-top: 20px;
+    padding: 5px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+  span {
+    background-color: #067489;
+  }
+
+  #career-learn-more-wrap{
+    margin: 0 auto;
+    width: 960px;
+    height: 150px;
+    background-color: #eeeeee;
+    padding-top:43px;
+  }
+
+  #career-learn-more{
+    margin: 0 auto;
+    width: 300px;
+  }
+  #job-listings-wrap{
+    margin: 0 auto;
+    width: 960px;
+    height: 280px;
+    background-color: #eeeeee;
+    padding-top:43px;
+  }
+  #open-jobs-image{
+    position: relative;
+top: -50px;
+right: 10px;
+width: 215px;
+float: left;
+  }
+  #job-listings{
+    position: relative;
+    margin-left:250px
+  }
+  #job-listings h2{
+    display: inline-block;
+    color: rgb( 81, 143, 204 );
+    text-transform: uppercase;
+  }
+  h2#location{
+    padding-left:
+      150px;
+    
+  }
+  section #jobs{
+    // display: table;
+    // width: 580px;
+    // float: right;
+  }
+  
+
+  .jobs-header{
+    display: table-row;
+  }
+  .jobs-pos, .jobs-loc{
+    display: table-cell;
+    text-transform: uppercase;
+    font-size: .8em;
+  }
+  .jobs-loc{
+    padding-left:100px;
+  }
+  .jobs-item-image{
+    display: table-cell;
+    padding-left: 130px;
+  }
+
+}

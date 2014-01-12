@@ -14,7 +14,7 @@
         </div>
         <div class="copyright">
           <hr></hr>
-          <p>Copyright &copy; 2013 Dialog Group <br> All rights reserved</p>
+          <p>Copyright &copy; <?php echo date('Y'); ?> Dialog Group <br> All rights reserved</p>
         </div>
       </div>
     </div>

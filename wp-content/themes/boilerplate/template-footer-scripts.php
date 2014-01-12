@@ -1,7 +1,7 @@
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/foundation.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/foundation<?php if(MINIFY) echo '.min'; ?>.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/foundation.orbit<?php if(MINIFY) echo '.min'; ?>.js"></script>
 <?php if(is_front_page()) { ?>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/foundation.orbit.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/slider.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/slider<?php if(MINIFY) echo '.min'; ?>.js"></script>
 <?php } ?>
 <script>
   //GA
