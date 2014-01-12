@@ -1,6 +1,7 @@
 <?php
 /*
  * Template Name: Case Study
+ * Renaming this file will break case study pages
  */
 
 get_header(); ?>

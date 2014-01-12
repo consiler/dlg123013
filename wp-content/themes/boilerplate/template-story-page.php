@@ -42,7 +42,7 @@ get_header(); ?>
         <div id="story-our-clients">
           <div id="story-our-clients-copy">
             <h2>Our Clients: Upstarts, Blue Chips and Pioneers.</h2>
-            <p>We serve a client base that is as large and varied as our skill set.  Global brander leaders in technology, hospitality, and healthcare, along with emerging leaders in diverse spaces all rely on Dialog for our ability to help them quickly identify and act on new opportunities for growth.</p>
+            <p>We serve a client base that is as large and varied as our skill set.  Global brand leaders in technology, hospitality, and healthcare, along with emerging leaders in diverse spaces all rely on Dialog for our ability to help them quickly identify and act on new opportunities for growth.</p>
           </div>
           <div id="story-our-clients-testimonial-slider">
             <blockquote>&ldquo;I’ve never had greater trust in a marketing partner. Dialog always has my best interest in mind, and is a partner in the truest sense.  Their ability to marry “deep strategy” with an unmatched depth of experience in Healthcare, Education and Government is a home run for anyone marketing in these markets. They are my go-to partner for Public Sector expertise.&rdquo;</blockquote>

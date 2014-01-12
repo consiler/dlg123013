@@ -6,7 +6,7 @@
             <?php for($i = 1; $i <= 3; $i++) { ?>
               <div class="large-4 columns threecolumn-cell">
               <?php if($header = get_sub_field('header_'.$i)) { ?>
-                <h4<?php  ?>><?php echo $header; echo get_page_template_slug( $post->ID ); ?></h4>
+                <h4<?php $cs = get_page_template_slug(get_the_ID()); if($cs == "template-case-study-page.php") { echo ' class="cs"'; } ?>><?php echo $header; ?></h4>
                 <?php if($copy = get_sub_field('copy_'.$i)) { ?>
                 <?php echo $copy; ?>
                 <?php } ?>
