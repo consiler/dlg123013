@@ -1,6 +1,12 @@
 //Navbar code
 var $ = jQuery.noConflict();
 $(document).ready(function(){
+  var s1 = -24;//minimum top for #nav-menu-slide
+  var s2 = 71;//maximum top for #nav-menu-slide
+  if($("meta[adminbar='1']")) {
+    s1 = 8;
+    s2 = 103;
+  }
   var slideMenu = $('#nav-menu-slide');
 
   //Extract the sub menus
@@ -31,7 +37,7 @@ $(document).ready(function(){
   }, function(){
     slideMenu.stop()
           .animate({
-            top: -24
+            top: s1
           }, 400, 'swing', function(){
             slideMenu.stop();
         });
@@ -47,12 +53,12 @@ $(document).ready(function(){
         $('#nav-menu-slide-center ul[data-sub-menu-index='+i+']').css({display: 'block'});
         slideMenu.stop()
         .animate({
-          top: 71
+          top: s2
         });
       }, function(){
         slideMenu.stop()
           .animate({
-            top: -24
+            top: s1
           }, 400, 'swing', function(){
             $('#nav-menu-slide-center ul[data-sub-menu-index='+i+']').hide();
             slideMenu.stop();

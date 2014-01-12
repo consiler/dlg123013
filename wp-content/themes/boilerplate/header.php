@@ -1,4 +1,4 @@
-<?php define('MINIFY', 1); ?>
+<?php define('MINIFY', 0); ?>
 <!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="no-js ie ie6 lte7 lte8 lte9" dir="<?php bloginfo('text_direction'); ?>" <?php language_attributes(); ?>><![endif]-->
 <!--[if IE 7 ]><html class="no-js ie ie7 lte7 lte8 lte9" dir="<?php bloginfo('text_direction'); ?>" <?php language_attributes(); ?>><![endif]-->
@@ -25,6 +25,7 @@
 		  //If you delete this line, the wordpress admin menu will not appear at the top of the page
 		  wp_head();
     ?>
+    <?php if(is_admin_bar_showing()) { ?><meta adminbar="1" /><link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/admin.css" /><?php } ?>
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/navbar<?php if(MINIFY) echo '.min'; ?>.js"></script>
   </head>
 	<body <?php body_class(); ?>>
