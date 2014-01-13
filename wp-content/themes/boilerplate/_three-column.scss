@@ -1,6 +1,5 @@
 #three-column {
-    overflow: hidden;
-    padding-left: 23px; 
+    overflow: hidden; 
 }
 #three-column .row {
     margin-top: 35px;
@@ -8,9 +7,9 @@
 .threecolumn-cell {
     padding-left: 70px!important;
 }
-.threecolumn-cell:first-child {
+/*.threecolumn-cell:first-child {
     padding-left: 0!important;
-}
+}*/
 .threecolumn-cell p {
     color: #33332f;
     font-family: $font-stack;

@@ -1,0 +1,21 @@
+#anchor-bar-wrap {
+  background-color: #dbdbdb;
+}
+#anchor-bar {
+  height: 30px;
+  li {
+    float: left;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 15px;
+    height: 20px;
+    line-height: 20px;
+    border-left: 1px #c6c5c5 solid;
+    a {
+      font-size: 10pt;
+      color: #fff;
+      text-transform: uppercase;
+    }
+  }
+}

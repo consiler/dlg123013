@@ -22,8 +22,8 @@ get_header(); ?>
             <li id="approach-slide" data-orbit-slide="approach">
               <div class="promo-slide">
                 <div class="promo-slide-text">
-                  <h2>Our Approach: Analysis, Expertise and Advice.</h2>
-                  <p>Dialog leaders have 20+ years experience combining top tier strategy consulting, digital agency creativity, and general management and marketing consulting work.</p>
+                  <h2>Our Approach: Objective, Collaborative, Cross-Disciplinary</h2>
+                  <p>Dialog leaders have 20+ years experience across top tier strategy consulting, general management leadership and digital marketing execution.</p>
                   <img src="<?php bloginfo('template_url'); ?>/images/story/agency-consultancy.png">
                 </div>
                 <div class="promo-slide-tile-slider-wrap">
