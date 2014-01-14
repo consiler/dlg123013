@@ -1,3 +1,16 @@
+/*Begin Generic Layout Variables*/
+.single-copy{
+    padding-top: 50px;
+    padding-left: 180px;
+    padding-right: 360px;
+    h2 {
+      font-size: 40pt;
+    }
+}
+/*End Generic Layout Variables*/
+
+
+/*Begin Broad Flex Layout Styles*/
 #anchor-bar-wrap {
   background-color: #dbdbdb;
 }
@@ -19,9 +32,10 @@
     }
   }
 }
+/*End Broad Flex Layout Styles*/
 
-/*Open Door Page*/
 
+/*Begin Open Door Page Stlyes*/
 #open-door-wrap {
     h2 {
     font-weight: 200;
@@ -29,15 +43,12 @@
     color: #979696;
     padding: 15px 0;
     }
-  .first {
-    h2 {
-      font-size: 30pt;
-    }
+  #first {
+    @extend .single-copy;
   }
-  .second {
-    h2 {
-      font-size: 60pt;
-    }
+  #second {
+    @extend .single-copy;
   }
 
 }
+/*End Open Door Page Stlyes*/
