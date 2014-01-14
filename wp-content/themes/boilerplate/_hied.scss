@@ -22,7 +22,7 @@
     line-height: .5em;
   }
 }
-#hied-intro {
+#hied-intro, #hied-wrap > .layout-single-copy {
   h2 {
     font-size: 46pt;
     padding-bottom: 0;
@@ -81,7 +81,7 @@
 .huge-text {
   color: $dialogblue;
   font-weight: 200;
-  font-size: 90px;
+  font-size: 86px;
   text-align: left;
 }
 .seperator {

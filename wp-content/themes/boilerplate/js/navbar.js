@@ -3,7 +3,7 @@ var $ = jQuery.noConflict();
 $(document).ready(function(){
   var s1 = -24;//minimum top for #nav-menu-slide
   var s2 = 71;//maximum top for #nav-menu-slide
-  if($("meta[adminbar='1']")) {
+  if($("meta[adminbar='1']").length > 0) {
     s1 = 8;
     s2 = 103;
   }
