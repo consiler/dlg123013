@@ -43,11 +43,38 @@
     color: #979696;
     padding: 15px 0;
     }
+
   #first {
-    @extend .single-copy;
+    padding-top: 75px;
+    padding-left: 180px;
+    padding-right: 360px;
+    h2 {
+      font-size: 50pt;
+    }
   }
+
   #second {
-    @extend .single-copy;
+    padding-top: 130px;
+    padding-left: 64px;
+    padding-right: 670px;
+    h2 {
+      color: #fff;
+      font-size: 30pt;
+    }
+    p {
+      color: #efefef;
+    }
+  }
+
+  #third {
+    padding-top: 130px;
+    padding-left: 290px;
+    padding-right: 390px;
+    address {
+      font-style: italic;
+      font-size: 10pt;
+      line-height: 1.5em;
+    }
   }
 
 }
