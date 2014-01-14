@@ -48,4 +48,21 @@ get_header(); ?>
   </div>
   <?php endwhile; ?>
 </div>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/unslider.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/glide.js"></script>
+<script type="text/javascript">
+$("#k12-promo-slider-orbit").on("ready.fndtn.orbit", function(event) {
+  $('.slider').glide({
+    autoplay: 5000,
+    arrows: false,
+    hoverpause: false
+  });
+  $('.orbit-glowing-bullets > li').each(function(i, blt) {
+    $(this).html(''+(i+1));
+  });
+});
+$(document).ready(function(){
+  $(document).foundation();
+});
+</script>
 <?php get_footer(); ?>
