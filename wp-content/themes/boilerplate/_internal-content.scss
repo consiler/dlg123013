@@ -38,6 +38,12 @@
             font-size: 11pt;
         }
     }
+    #three-column > ul {
+        list-style: none;
+        li {
+            margin: inherit;
+        }
+    }
     h2 {
         color: #5197b4;
         font-family: $heading-font-stack;
