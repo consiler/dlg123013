@@ -14,8 +14,8 @@ get_header(); ?>
   <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
   <div id="anchor-bar-wrap">
     <ul id="anchor-bar" class="centered">
-      <li><a href="#">Example Anchor Link 1</a></li>
-      <li><a href="#">Example Anchor Link 2</a></li>
+      <li><a href="#hied-wrap">Higher Ed</a></li>
+      <li><a href="#k12-wrap">K-12</a></li>
     </ul>
   </div>
   <div id="internal-lower-wrap">
@@ -25,20 +25,20 @@ get_header(); ?>
       if(get_field("anchor_groups")) {
         while(has_sub_field("anchor_groups")) {
           //Flexible Content: Blocks
+          //Get anchor data for block group
+          $anchor_name = get_sub_field("anchor_name");
+          $anchor_id = get_sub_field("anchor_id");
+          echo '<div id="'.$anchor_id.'-wrap">';
           foreach(get_sub_field("blocks") as $block) {
-            //Get anchor data for block group
-            $anchor_name = get_sub_field("anchor_name");
-            $anchor_id = get_sub_field("anchor_id");
             //Flexible Content: Blocks
-            echo '<div id="'.$anchor_id.'-wrap">';
             $grl = $block['acf_fc_layout'];
             $allowed_layouts = array("single_copy", "copy_left_quote_right", "indexed_slider", "stats_copy_pt");
             if(in_array($grl, $allowed_layouts))
               include(TEMPL_PATH.$grl.".php");
             else
               t_err("Layout ".$grl." not in allowed layouts.");
-            echo '</div>';
           }
+          echo '</div>';
         }
       } else {
         t_err("No Anchor Groups.");

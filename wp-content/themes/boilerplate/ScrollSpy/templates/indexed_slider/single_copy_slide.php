@@ -1,0 +1,1 @@
+<?php $copy = get_sub_field("copy"); ?>
