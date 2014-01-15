@@ -69,3 +69,16 @@
         letter-spacing: .04em;
     }
 }
+.arrow {
+    background-color: #333;
+    width: 20px;
+    height: 60px;
+    display: block;
+}
+#right-link {
+    float: right;
+}
+#left-link {
+    float: left;
+    clear: left;
+}

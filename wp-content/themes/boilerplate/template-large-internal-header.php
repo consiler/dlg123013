@@ -7,5 +7,12 @@
          <a href="<?php the_field('page_heading_call_to_action_link'); ?>"><span class="lighter-grey-button"><?php the_field('page_heading_call_to_action'); ?></span></a>
         <?php } ?>
       </header>
+      <?php
+        if(get_field('left_link_target')){ ?>
+      <a href="<?php get_field('left_link_target'); ?>" class="arrow" id="left-link"></a>
+      <?php }
+      if(get_field('right_link_target')) { ?>
+      <a href="<?php get_field('right_link_target'); ?>" class="arrow" id="right-link"></a>
+      <?php } ?>
     </div>
   </div>
