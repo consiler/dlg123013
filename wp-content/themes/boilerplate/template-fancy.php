@@ -45,6 +45,7 @@ get_header(); ?>
   <?php endwhile; ?>
 </div>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/glide.js"></script>
+<script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/scrollspy.js'></script>
 <script type="text/javascript">
 $("#k12-promo-slider-orbit").on("ready.fndtn.orbit", function(event) {
   $('.slider').glide({
@@ -58,11 +59,6 @@ $("#k12-promo-slider-orbit").on("ready.fndtn.orbit", function(event) {
 });
 $(document).ready(function(){
   $(document).foundation();
-});
-</script>
-<script type='text/javascript' src='<?php bloginfo('template_url'); ?>/js/scrollspy.js'></script>
-<script type="text/javascript">
-$(document).ready(function() {
   $('body').scrollspy({
     min: $('#anchor-bar-wrap').offset().top,
     max: 999999,
