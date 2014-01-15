@@ -24,10 +24,12 @@
     overflow: hidden;
     width: 100%;
 }
-#internal-lower {
-    overflow: hidden;
+#anchor-bar-wrap + #internal-lower-wrap > #internal-lower {
     margin-bottom: 60px;
     box-shadow: 1px 1px 3px #ddd;
+}
+#internal-lower {
+    overflow: hidden;
     b {
         font-weight: bold;
     }
@@ -42,7 +44,7 @@
     }
     #three-column > ul {
         list-style: none;
-        li {
+        & > li {
             margin: inherit;
         }
     }

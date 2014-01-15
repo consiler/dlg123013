@@ -11,21 +11,9 @@ get_header(); ?>
 <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/scrollspy.js"></script>
 <div id="internal-wrap">
   <?php get_template_part('template', 'internal-header'); ?>
-  <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-  <div id="anchor-bar-wrap">
-    <ul id="anchor-bar" class="centered">
-    <?php
-    if(get_field("anchor_groups")) {
-        while(has_sub_field("anchor_groups")) {
-          //Flexible Content: Blocks
-          //Get anchor data for block group
-          $anchor_name = get_sub_field("anchor_name");
-          $anchor_id = get_sub_field("anchor_id");
-    ?>
-      <li id="<?php echo $anchor_id; ?>-wrap-watcher"><a href="#<?php echo $anchor_id; ?>-wrap"><?php echo $anchor_name; ?></a></li>
-    <?php } } ?>
-    </ul>
-  </div>
+  <?php if ( have_posts() ) while ( have_posts() ) : the_post();
+  get_template_part('template', 'anchor-bar');
+  ?>
   <div id="internal-lower-wrap">
     <div id="internal-lower" class="centered">
       <?php
