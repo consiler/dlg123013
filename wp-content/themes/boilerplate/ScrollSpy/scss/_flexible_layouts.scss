@@ -179,3 +179,36 @@
 
         .slider-nav__item:hover { background: #59bce1; }
         .slider-nav__item--current { background: #59bce1; }
+
+#faculty-wrap {
+  color: #787878;
+  font-weight: 400;
+  h2 {
+    font-weight: 200;
+    font-family: $font-stack;
+    color: #979696;
+    padding: 15px 0;
+    font-size: 30pt;
+  }
+  p {
+    font-size: 11pt;
+  }
+  h5 {
+    color: #518fcc;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+#faculty-intro {
+  padding-top: 60px;
+  padding-left: 150px;
+  padding-right: 340px;
+}
+#faculty-mid {
+  h2, * {
+    color: #fff;
+  }
+  padding-top: 60px;
+  padding-left: 190px;
+  padding-right: 420px;
+}
