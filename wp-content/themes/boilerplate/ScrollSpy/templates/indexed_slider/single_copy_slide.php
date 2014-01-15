@@ -1,6 +1,6 @@
-<?php $copy = get_sub_field("copy"); ?>
+<?php $copy = $slide["copy"]; ?>
 <div class="promo-slide">
   <div class="promo-slide-text">
     <?php echo $copy; ?>
   </div>
-  
+</div>
