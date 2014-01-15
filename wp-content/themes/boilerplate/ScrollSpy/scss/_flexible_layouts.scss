@@ -17,16 +17,25 @@
 /*Begin Broad Flex Layout Styles*/
 #anchor-bar-wrap {
   background-color: #dbdbdb;
+  width: 100%;
 }
 #anchor-bar {
   height: 30px;
+  margin: 0 auto;
   li {
+    &.active > a {
+      color: #333;
+    }
+    &:first-child {
+      margin-left: 0;
+      border-left: none;
+    }
     float: left;
     padding-left: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-left: 15px;
-    height: 20px;
+    height: 30px;
     line-height: 20px;
     border-left: 1px #c6c5c5 solid;
     a {
@@ -35,6 +44,14 @@
       text-transform: uppercase;
     }
   }
+}
+#anchor-bar-wrap.fixed {
+  top: 0;
+  position: fixed;
+  z-index: 9999999999;
+}
+#anchor-bar-wrap.fixed + div {
+  padding-top: 30px;
 }
 /*End Broad Flex Layout Styles*/
 
