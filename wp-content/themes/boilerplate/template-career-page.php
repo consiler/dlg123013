@@ -13,7 +13,7 @@ get_header(); ?>
           <img src="<?php the_field('values_image');?>"/>
           <div id="career-learn-more-wrap">
             <div id="career-learn-more">
-              <a href="\our-team"><span class="career-learn-more-button">Learn more about our team</span></a>
+              <a href="/about/leadership/"><span class="career-learn-more-button">Learn more about our leadership</span></a>
             </div><!-- career-learn-more -->
           </div><!-- career-learn-more-wrap -->
           <div id="value">
@@ -55,7 +55,7 @@ get_header(); ?>
                     <div class="jobs-pos"><?php the_field('position');?></div>
                     <div class="jobs-loc"><?php the_field('location');?></div>
                     <div class="jobs-item-image">
-                      <a href="#">
+                      <a href="<?php the_field('pdf');?>">
                         <img src="<?php bloginfo('url'); ?>/wp-content/uploads/2013/12/job-detail-button_16.png"/>
                       </a>
                     </div>
