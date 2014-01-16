@@ -9,7 +9,7 @@ get_header(); ?>
   get_template_part('template', 'anchor-bar');
   ?>
   <div id="internal-lower-wrap">
-    <div id="internal-lower" class="centered">
+    <div id="internal-lower" class="centered shadow">
       <div id="hied-wrap">
         <div id="hied-intro">
           <?php the_field('introduction_copy'); ?>

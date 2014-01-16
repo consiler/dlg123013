@@ -9,12 +9,14 @@
       <ul class="slides">
         <?php
           foreach($slide['subslider'] as $subslide) {
-            if($promo_object = $subslide['promo_tile']) {
+            if($image = $subslide["image"]) {
+              ?>
+              <li class="slide"><img src="<?php echo $image['url']; ?>" /></li>
+              <?php
+            } elseif($promo_object = $subslide['promo_tile']) {
               ?>
               <li class="slide"><div class="promo-slide-imgwrap"><a href="<?php the_field('link_url', $promo_object->ID); ?>"><img src="<?php the_field('image', $promo_object->ID); ?>"></a><div></li>
               <?php
-            } elseif($image = $subslide["image"]) {
-              //todo
             } elseif($scopy = $subslide["copy"]) {
               //todo
             }

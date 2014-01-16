@@ -9,14 +9,14 @@ get_header(); ?>
   get_template_part('template', 'anchor-bar');
   ?>
   <div id="internal-lower-wrap">
-    <div id="internal-lower" class="centered">
+    <div id="internal-lower" class="centered shadow">
       <div id="k12-wrap">
         <div id="k12-intro">
           <?php the_field('introduction_copy'); ?>
         </div>
         <?php if(get_field('promo_slider')) { ?>
         <div id="k12-promo-slider">
-          <div id="k12-promo-slider-orbit" data-orbit data-options="animation:fade; timer:false; animation_speed:300; navigation_arrows:false; bullets_container_class:orbit-glowing-bullets; pause_on_hover:false; next_on_click:false; bullets:true; slide_number:false">
+          <div id="k12-promo-slider-orbit" class="promo-slider-orbit" data-orbit data-options="animation:fade; timer:false; animation_speed:300; navigation_arrows:false; bullets_container_class:orbit-glowing-bullets; pause_on_hover:false; next_on_click:false; bullets:true; slide_number:false">
             <?php
             $slideNum = 0;
             while(has_sub_field('promo_slider')) {

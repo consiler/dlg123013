@@ -1,6 +1,9 @@
 #story-wrap {
   color: #787878;
   font-weight: 400;
+  .slider-nav {
+    bottom: 70px;
+  }
   h2 {
     font-weight: 200;
     font-family: $font-stack;
@@ -22,7 +25,7 @@
     padding-top: 70px;
   }
 }
-#pse-slide {
+.promo-slide-1.active {
   .promo-slide-text {
     width: 320px;
   }
@@ -35,7 +38,7 @@
     font-weight: 600;
   }
 }
-#approach-slide {
+.promo-slide-2.active {
   .promo-slide-text {
     width: 370px;
   }

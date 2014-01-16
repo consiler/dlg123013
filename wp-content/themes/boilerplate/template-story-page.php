@@ -10,7 +10,7 @@ get_header(); ?>
     <div id="internal-lower" class="centered">
       <div id="story-wrap">
         <div id="story-promo-slider">
-          <div id="story-promo-slider-orbit" data-orbit data-options="animation:fade; timer:false; animation_speed:300; navigation_arrows:false; bullets_container_class:orbit-glowing-bullets; pause_on_hover:false; next_on_click:false; bullets:true; slide_number:false">
+          <div id="story-promo-slider-orbit" class="promo-slider-orbit" data-orbit data-options="animation:fade; timer:false; animation_speed:300; navigation_arrows:false; bullets_container_class:orbit-glowing-bullets; pause_on_hover:false; next_on_click:false; bullets:true; slide_number:false">
             <li id="pse-slide" data-orbit-slide="pse">
               <div class="promo-slide">
                 <div class="promo-slide-text">
