@@ -1,5 +1,0 @@
-0000.000 (1) Opened log file at time: Tue, 07 Jan 2014 18:29:09 +0000
-0000.001 (1) UpdraftPlus WordPress backup plugin (http://updraftplus.com): 1.8.2 WP: 3.8 PHP: 5.5.3 (Darwin Wills-MacBook-Pro.local 13.0.2 Darwin Kernel Version 13.0.2: Sun Sep 29 19:38:57 PDT 2013; root:xnu-2422.75.4~1/RELEASE_X86_64 x86_64) MySQL: 5.5.33 Server: Apache/2.2.25 (Unix) mod_ssl/2.2.25 OpenSSL/0.9.8y DAV/2 PHP/5.5.3 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 2.6M | 2.8M) multisite: N mcrypt: Y ZipArchive::addFile: Y
-0000.001 (1) Free space on disk containing Updraft's temporary directory: 441361.1 Mb
-0000.002 (1) Backup run: resumption=1, nonce=9be3322647a1, begun at= (1389119349s ago), job type=
-0000.002 (1) The backup_time parameter appears to be empty (usually caused by resuming an already-complete backup).
