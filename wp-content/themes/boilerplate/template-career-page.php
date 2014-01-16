@@ -65,7 +65,9 @@ get_header(); ?>
               </section>
             </div> <!-- job-listings -->
             <div id="jobs-contact">
-              <p>Please send all inquires to:<a href="mailto:jobs@dialoggroup.com">Jobs@DialogGroup.com</a></p>
+              <p>Please send all inquires to:<script type="text/javascript">
+  document.write("<a href=\"mail" + "to:" + new Array("jobs","dialoggroup.com").join("@") + "\">" + "Jobs@DialogGroup.com" + "</" + "a>");
+</script></p>
             </div>
           </div><!-- job-listings-wrap -->
 
